@@ -173,8 +173,14 @@ view: records {
     sql: ${TABLE}.Pk ;;
   }
 
-  dimension: post_date {
-    type: string
+  #dimension: post_date {
+  #  type: string
+  #  sql: ${TABLE}.PostDate ;;
+  #}
+  dimension_group: post_date {
+    type: time
+    timeframes: [date, week, month]
+    convert_tz: no
     sql: ${TABLE}.PostDate ;;
   }
 
