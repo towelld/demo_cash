@@ -259,4 +259,19 @@ view: records {
     type: count
     drill_fields: []
   }
+  measure: count_percent {
+    type: percent_of_total
+    sql: ${count};;
+  }
+  measure: sum_amount {
+    type: sum
+    sql: ${original_amount};;
+  }
+  measure: sum_amount_usd {
+    type: sum
+    sql: ${amount_usd};;
+  }
+
+
+
 }
