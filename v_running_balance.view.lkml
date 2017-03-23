@@ -40,4 +40,9 @@ view: v_running_balance {
     type: count
     drill_fields: []
   }
+
+  measure: sum_net{
+    type: sum
+    sql: ${net};;
+  }
 }
