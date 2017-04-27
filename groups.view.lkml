@@ -121,4 +121,12 @@ view: groups {
     type: count
     drill_fields: [group_name, match_name]
   }
+  measure: start {
+    type: min
+    sql: ${TABLE}.DateTimeStamp ;;
+  }
+  measure: end {
+    type: max
+    sql: ${TABLE}.DateTimeStamp ;;
+  }
 }
