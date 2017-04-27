@@ -7,8 +7,8 @@ view: records {
   }
 
   dimension: active_status {
-    type: number
-    sql: ${TABLE}.ActiveStatus ;;
+    type: string
+    sql: case ${TABLE}.ActiveStatus when 0 then "Unmatched" when 1 then "Matched" end;;
   }
 
   dimension: amount {
