@@ -1,5 +1,5 @@
 view: load_jobs {
-  sql_table_name: CtcInventory.LoadJobs ;;
+  sql_table_name: DemoCash.LoadJobs ;;
 
   dimension: date_time_stamp {
     type: string
