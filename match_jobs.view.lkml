@@ -1,14 +1,25 @@
 view: match_jobs {
   sql_table_name: DemoCash.MatchJobs ;;
 
-  dimension: date_time_stamp {
-    type: string
+  #dimension: date_time_stamp {
+  #  type: string
+  #  sql: ${TABLE}.DateTimeStamp ;;
+  #}
+  dimension_group: date_time_stamp {
+    type: time
+    timeframes: [time, date, week, month]
+    convert_tz: no
     sql: ${TABLE}.DateTimeStamp ;;
   }
 
   dimension: duration {
     type: number
     sql: ${TABLE}.Duration ;;
+  }
+
+  dimension: duration_secs {
+    type: number
+    sql: ${TABLE}.Duration/1000.0 ;;
   }
 
   dimension: match_id {
