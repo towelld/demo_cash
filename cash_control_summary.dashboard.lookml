@@ -89,7 +89,7 @@
       title: Match Rate
       left: 5
       top: 0
-      height: 6
+      height: 4
       width: 5
       type: looker_area
       model: democash
@@ -127,6 +127,40 @@
       series_colors:
         groups.count: "#5e8ab4"
       x_axis_datetime_label: "%H:%M:%S"
+
+    - name: match_rate_detail
+      title: Detail
+      left: 5
+      top: 4
+      height: 2
+      width: 5
+      type: table
+      model: democash
+      explore: match_jobs
+      dimensions: [match_jobs.date_time_stamp_time, match_jobs.duration_secs, match_jobs.number_of_matched_records,
+        match_jobs.number_of_suggested_records]
+      sorts: [match_jobs.date_time_stamp_time desc]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      show_view_names: false
+      show_row_numbers: false
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: gray
+      limit_displayed_rows: false
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      series_labels:
+        match_jobs.date_time_stamp_time: Started
+        match_jobs.duration_secs: Duration
+        match_jobs.number_of_matched_groups: Matched
+        match_jobs.number_of_suggested_groups: Suggested
+        match_jobs.number_of_matched_records: Matched
+        match_jobs.number_of_suggested_records: Suggested
 
     - name: matched_percentage_chart
       title: Matched Percentage
