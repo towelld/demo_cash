@@ -20,7 +20,7 @@
       left: 0
       top: 0
       height: 4
-      width: 5
+      width: 6
       type: looker_bar
       model: democash
       explore: files
@@ -60,7 +60,7 @@
 
     - name: files_loaded_detail
       title: Detail
-      left: 0
+      left: 2
       top: 4
       height: 2
       width: 4
@@ -87,10 +87,10 @@
 
     - name: match_rate_chart
       title: Match Rate
-      left: 5
+      left: 6
       top: 0
       height: 4
-      width: 5
+      width: 6
       type: looker_area
       model: democash
       explore: groups
@@ -130,7 +130,7 @@
 
     - name: match_rate_detail
       title: Detail
-      left: 5
+      left: 7
       top: 4
       height: 2
       width: 4
@@ -164,10 +164,10 @@
 
     - name: matched_percentage_chart
       title: Matched Percentage
-      left: 10
+      left: 12
       top: 0
       height: 4
-      width: 5
+      width: 6
       type: looker_bar
       model: democash
       explore: records
@@ -216,7 +216,7 @@
 
     - name: matched_percentage_detail
       title: Detail
-      left: 10
+      left: 13
       top: 4
       height: 4
       width: 4
