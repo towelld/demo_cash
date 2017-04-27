@@ -279,7 +279,7 @@ view: records {
   }
   measure: count_matched {
     type: sum
-    sql: case ${TABLE}.ActiveStatus when 'Unmatched' then 0 when 'Matched' then 1 end;;
+    sql: ${TABLE}.ActiveStatus;;
   }
 
 }
