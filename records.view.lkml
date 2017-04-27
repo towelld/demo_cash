@@ -53,7 +53,7 @@ view: records {
 
   dimension: assigned_to {
     type: string
-    sql: ${TABLE}.AssignedTo ;;
+    sql: isnull(${TABLE}.AssignedTo,'Unassigned') ;;
   }
 
   dimension: business_key {
