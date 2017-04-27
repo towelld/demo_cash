@@ -1,8 +1,8 @@
 - dashboard: cash_control_summary
   title: Cash Control Summary
   layout: static
-  width: 2220
-  tile_size: 40
+  width: 2000
+  tile_size: 100
   auto_run: true
   embed_style:
   background_color: "#ffffff"
@@ -20,7 +20,7 @@
       left: 0
       top: 0
       height: 20
-      width: 55
+      width: 5
       type: looker_bar
       model: democash
       explore: files
