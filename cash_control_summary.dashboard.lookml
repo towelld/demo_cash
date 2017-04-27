@@ -96,6 +96,8 @@
       explore: groups
       dimensions: [groups.date_time_stamp_time]
       measures: [groups.count]
+      filters:
+        groups.match_status: '2'
       sorts: [groups.date_time_stamp_time]
       limit: '500'
       column_limit: '50'
