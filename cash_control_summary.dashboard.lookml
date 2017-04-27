@@ -465,7 +465,7 @@
       show_totals_labels: false
       show_silhouette: false
       totals_color: "#808080"
-      colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#76a2be", "#edc559", "#b34c59"]
+      colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#edc559", "#b34c59", "#76a2be"]
       series_colors: {}
       y_axis_value_format: '0'
 
@@ -509,7 +509,7 @@
       show_totals_labels: false
       show_silhouette: false
       totals_color: "#808080"
-      colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#76a2be", "#edc559", "#b34c59"]
+      colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#edc559", "#b34c59", "#76a2be"]
       series_colors: {}
       y_axis_value_format: '0'
 
@@ -554,5 +554,5 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#76a2be", "#edc559", "#b34c59"]
+      colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#edc559", "#b34c59", "#76a2be"]
       series_colors: {}
