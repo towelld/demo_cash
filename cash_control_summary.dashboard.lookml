@@ -379,3 +379,49 @@
         records.count_matched: Matched
         calculation_2: Unmatched
         calculation_1: Rate
+
+
+    - name: records_loaded_chart
+      title: Records Loaded
+      left: 0
+      top: 6
+      height: 4
+      width: 6
+      type: looker_bar
+      model: democash
+      explore: records
+      dimensions: [records.system]
+      pivots: [records.system]
+      measures: [records.count]
+      sorts: [records.count desc 0, records.system]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      stacking: ''
+      show_value_labels: true
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: false
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: false
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: false
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      series_types: {}
+      hide_legend: false
+      series_colors:
+        bank - Records Count: "#fa8d29"
+        our - Records Count: "#646569"
+
