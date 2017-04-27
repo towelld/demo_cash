@@ -89,7 +89,7 @@
       title: Match Rate
       left: 5
       top: 0
-      height: 4
+      height: 6
       width: 5
       type: looker_area
       model: democash
