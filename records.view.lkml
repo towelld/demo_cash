@@ -277,7 +277,9 @@ view: records {
     type: sum
     sql: ${amount_usd};;
   }
-
-
+  measure: count_matched {
+    type: sum
+    sql: case ${TABLE}.ActiveStatus when 'Unmatched' then 0 when 'Matched' then 1 end;;
+  }
 
 }
