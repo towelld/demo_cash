@@ -19,7 +19,7 @@ view: load_jobs {
   dimension: load_duration {
     type: number
     label: "Secs"
-    sql: ${TABLE}.LoadDuration/1000 ;;
+    sql: ${TABLE}.LoadDuration/1000.0 ;;
     value_format: "0.00"
   }
 

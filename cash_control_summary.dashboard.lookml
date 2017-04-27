@@ -59,6 +59,7 @@
         our.txt - Files Sum Records Loaded: "#646569"
 
     - name: files_loaded_detail
+      title: Detail
       left: 0
       top: 4
       height: 2
