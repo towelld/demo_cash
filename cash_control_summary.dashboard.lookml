@@ -19,7 +19,7 @@
       title: Files_Loaded
       left: 0
       top: 0
-      height: 20
+      height: 2
       width: 5
       type: looker_bar
       model: democash
