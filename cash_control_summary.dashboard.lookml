@@ -627,6 +627,8 @@
       explore: records
       dimensions: [records.assigned_to]
       measures: [records.count]
+      filters:
+        records.active_status: Unmatched
       sorts: [records.assigned_to]
       limit: '500'
       column_limit: '50'
