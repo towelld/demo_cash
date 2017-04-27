@@ -60,10 +60,10 @@
 
     - name: files_loaded_detail
       title: Detail
-      left: 0
+      left: 1
       top: 4
       height: 2
-      width: 5
+      width: 4
       type: table
       model: democash
       explore: load_jobs
@@ -130,10 +130,10 @@
 
     - name: match_rate_detail
       title: Detail
-      left: 5
+      left: 6
       top: 4
       height: 2
-      width: 5
+      width: 4
       type: table
       model: democash
       explore: match_jobs
@@ -216,10 +216,10 @@
 
     - name: matched_percentage_detail
       title: Detail
-      left: 10
+      left: 11
       top: 4
       height: 4
-      width: 5
+      width: 4
       type: table
       model: democash
       explore: records
