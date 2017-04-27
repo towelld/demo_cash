@@ -1,5 +1,5 @@
 view: load_jobs {
-  sql_table_name: DemoCash.LoadJobs ;;
+  sql_table_name: CtcInventory.LoadJobs ;;
 
   dimension: date_time_stamp {
     type: string
@@ -36,6 +36,11 @@ view: load_jobs {
     sql: ${TABLE}.NumberOfLoadedRecords ;;
   }
 
+  dimension: package {
+    type: string
+    sql: ${TABLE}.Package ;;
+  }
+
   dimension: pk {
     type: string
     sql: ${TABLE}.Pk ;;
@@ -49,6 +54,11 @@ view: load_jobs {
   dimension: rec_operational_cycle {
     type: string
     sql: ${TABLE}.RecOperationalCycle ;;
+  }
+
+  dimension: tenant_token {
+    type: string
+    sql: ${TABLE}.TenantToken ;;
   }
 
   dimension: time_stamp_zone_id {
