@@ -72,6 +72,7 @@
       sorts: [load_jobs.file_name]
       limit: '500'
       column_limit: '50'
+      total: true
       query_timezone: Europe/London
       show_view_names: false
       show_row_numbers: false
