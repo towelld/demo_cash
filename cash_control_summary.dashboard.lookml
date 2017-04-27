@@ -468,3 +468,48 @@
       colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#76a2be", "#edc559", "#b34c59"]
       series_colors: {}
       y_axis_value_format: '0'
+
+    - name: assignments_chart
+      title: Assignments
+      left: 12
+      top: 6
+      height: 4
+      width: 6
+      type: looker_column
+      model: democash
+      explore: records
+      dimensions: [records.assigned_to]
+      pivots: [records.assigned_to]
+      measures: [records.count]
+      filters:
+        records.active_status: Unmatched
+      sorts: [records.count desc 0, records.assigned_to]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: true
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: false
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#76a2be", "#edc559", "#b34c59"]
+      series_colors: {}
+      y_axis_value_format: '0'
+
