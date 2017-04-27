@@ -60,7 +60,7 @@
 
     - name: files_loaded_detail
       title: Detail
-      left: 2
+      left: 1
       top: 4
       height: 2
       width: 4
@@ -272,3 +272,48 @@
         records.count_matched: Matched
         records.count: Total
         calculation_1: Rate
+
+
+    - name: records_matched_chart
+      title: Records Matched
+      left: 18
+      top: 0
+      height: 4
+      width: 6
+      type: looker_pie
+      model: democash
+      explore: records
+      dimensions: [records.active_status]
+      measures: [records.count]
+      sorts: [records.count desc]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      value_labels: legend
+      label_type: labPer
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: true
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: true
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      series_types: {}
+      series_colors:
+        Matched: "#646569"
+        Unmatched: "#fa8d29"
