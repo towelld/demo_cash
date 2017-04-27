@@ -16,7 +16,7 @@
 
   elements:
     - name: files_loaded_chart
-      title: Files_Loaded
+      title: Files Loaded
       left: 0
       top: 0
       height: 4
@@ -57,3 +57,29 @@
       series_colors:
         bank.txt - Files Sum Records Loaded: "#5e8ab4"
         our.txt - Files Sum Records Loaded: "#646569"
+
+    - name: files_loaded_detail
+      left: 0
+      top: 4
+      height: 2
+      width: 5
+      type: table
+      model: democash
+      explore: load_jobs
+      dimensions: [load_jobs.file_name, load_jobs.number_of_loaded_records, load_jobs.number_of_discarded_records,
+        load_jobs.load_duration]
+      sorts: [load_jobs.file_name]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      show_view_names: false
+      show_row_numbers: false
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: gray
+      limit_displayed_rows: false
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false

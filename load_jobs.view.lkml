@@ -18,7 +18,8 @@ view: load_jobs {
 
   dimension: load_duration {
     type: number
-    sql: ${TABLE}.LoadDuration ;;
+    label: "Secs"
+    sql: ${TABLE}.LoadDuration/1000 ;;
   }
 
   dimension: load_id {
@@ -28,11 +29,13 @@ view: load_jobs {
 
   dimension: number_of_discarded_records {
     type: number
+    label: "Discarded"
     sql: ${TABLE}.NumberOfDiscardedRecords ;;
   }
 
   dimension: number_of_loaded_records {
     type: number
+    label: "Loaded"
     sql: ${TABLE}.NumberOfLoadedRecords ;;
   }
 
