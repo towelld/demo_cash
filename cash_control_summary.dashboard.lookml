@@ -1,7 +1,7 @@
 - dashboard: cash_control_summary
   title: Cash Control Summary
   layout: static
-  width: 2000
+  width: 2400
   tile_size: 100
   auto_run: true
   embed_style:
