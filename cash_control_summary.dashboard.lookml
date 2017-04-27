@@ -319,7 +319,7 @@
         Unmatched: "#fa8d29"
 
     - name: records_matched_detail
-      title: Records Matched
+      title: Detail
       left: 19
       top: 4
       height: 2
