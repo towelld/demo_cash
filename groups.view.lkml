@@ -22,7 +22,7 @@ view: groups {
   #}
   dimension_group: date_time_stamp {
     type: time
-    timeframes: [date, week, month]
+    timeframes: [time, date, week, month]
     convert_tz: no
     sql: ${TABLE}.DateTimeStamp ;;
   }
