@@ -16,8 +16,14 @@ view: groups {
     sql: ${TABLE}.Confidence ;;
   }
 
-  dimension: date_time_stamp {
-    type: string
+  #dimension: date_time_stamp {
+  #  type: string
+  #  sql: ${TABLE}.DateTimeStamp ;;
+  #}
+  dimension_group: date_time_stamp {
+    type: time
+    timeframes: [date, week, month]
+    convert_tz: no
     sql: ${TABLE}.DateTimeStamp ;;
   }
 
