@@ -60,7 +60,7 @@
 
     - name: files_loaded_detail
       title: Detail
-      left: 1
+      left: 0
       top: 4
       height: 2
       width: 4
@@ -130,7 +130,7 @@
 
     - name: match_rate_detail
       title: Detail
-      left: 6
+      left: 5
       top: 4
       height: 2
       width: 4
@@ -216,7 +216,7 @@
 
     - name: matched_percentage_detail
       title: Detail
-      left: 11
+      left: 10
       top: 4
       height: 4
       width: 4
