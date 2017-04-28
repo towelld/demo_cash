@@ -201,3 +201,29 @@
       series_colors:
         Matched - Records Count: "#646569"
         Unmatched - Records Count: "#fa8d29"
+
+    - name: outstanding
+      title: Outstanding
+      type: table
+      model: democash
+      explore: records
+      dimensions: [records.account_no, records.system, records.currency, records.original_amount,
+        records.sign, records.post_date_date, records.value_date, records.our_reference,
+        records.reference1, records.reference2, records.reference3, records.transaction_code]
+      filters:
+        records.active_status: Unmatched
+      sorts: [records.post_date_date desc]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      show_view_names: false
+      show_row_numbers: false
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: gray
+      limit_displayed_rows: false
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
