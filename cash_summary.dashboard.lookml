@@ -154,19 +154,20 @@
         Matched - Records Count: "#646569"
         Unmatched - Records Count: "#fa8d29"
 
-    - name: matched_percentage
-      title: Match Percentage
-      type: looker_bar
+    - name: records_matched
+      title: Records Matched
+      type: looker_pie
       model: democash
       explore: records
-      dimensions: [records.system, records.active_status]
-      pivots: [records.active_status]
+      dimensions: [records.active_status]
       measures: [records.count]
-      sorts: [records.count desc 0, records.system, records.active_status]
+      sorts: [records.count desc]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
-      stacking: percent
+      value_labels: legend
+      label_type: labPer
+      stacking: ''
       show_value_labels: false
       label_density: 25
       legend_position: center
@@ -175,11 +176,11 @@
       show_view_names: true
       limit_displayed_rows: false
       y_axis_combined: true
-      show_y_axis_labels: false
+      show_y_axis_labels: true
       show_y_axis_ticks: true
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
-      show_x_axis_label: false
+      show_x_axis_label: true
       show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
@@ -188,19 +189,10 @@
       show_totals_labels: false
       show_silhouette: false
       totals_color: "#808080"
-      show_row_numbers: true
-      truncate_column_names: false
-      hide_totals: false
-      hide_row_totals: false
-      table_theme: editable
-      enable_conditional_formatting: false
-      conditional_formatting_ignored_fields: []
-      conditional_formatting_include_totals: false
-      conditional_formatting_include_nulls: false
       series_types: {}
       series_colors:
-        Matched - Records Count: "#646569"
-        Unmatched - Records Count: "#fa8d29"
+        Matched: "#646569"
+        Unmatched: "#fa8d29"
 
     - name: outstanding
       title: Outstanding
