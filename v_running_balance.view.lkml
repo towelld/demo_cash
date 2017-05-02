@@ -49,17 +49,7 @@ view: v_running_balance {
 
   set: cash_record {
     fields: [
-      records.account_no,
-      records.system,
       records.currency,
-      records.original_amount,
-      records.sign,
-      records.post_date_date,
-      records.value_date,
-      records.our_reference,
-      records.reference1,
-      records.reference2,
-      records.reference3
     ]
   }
 }
