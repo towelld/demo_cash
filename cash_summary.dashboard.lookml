@@ -269,7 +269,7 @@
         USD - V Cash Ageing Sum Age Balance: "#646569"
 
     - name: historic_balance
-      title: Historic Balance Visualization
+      title: Historic Balance
       type: looker_line
       model: democash
       explore: v_running_balance
@@ -318,4 +318,3 @@
       series_colors:
         EUR - V Running Balance Sum Net: "#fa8d29"
         USD - V Running Balance Sum Net: "#646569"
-
