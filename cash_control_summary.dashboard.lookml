@@ -22,7 +22,7 @@
       height: 4
       width: 6
       type: looker_bar
-      model: democash
+      model: demo_cash
       explore: files
       dimensions: [files.file_name]
       pivots: [files.file_name]
@@ -65,7 +65,7 @@
       height: 2
       width: 4
       type: table
-      model: democash
+      model: demo_cash
       explore: load_jobs
       dimensions: [load_jobs.file_name, load_jobs.number_of_loaded_records, load_jobs.number_of_discarded_records,
         load_jobs.load_duration]
@@ -93,7 +93,7 @@
       height: 4
       width: 6
       type: looker_area
-      model: democash
+      model: demo_cash
       explore: groups
       dimensions: [groups.date_time_stamp_time]
       measures: [groups.count]
@@ -138,7 +138,7 @@
       height: 2
       width: 4
       type: table
-      model: democash
+      model: demo_cash
       explore: match_jobs
       dimensions: [match_jobs.date_time_stamp_time, match_jobs.duration_secs, match_jobs.number_of_matched_records,
         match_jobs.number_of_suggested_records]
@@ -172,7 +172,7 @@
       height: 4
       width: 6
       type: looker_bar
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.system, records.active_status]
       pivots: [records.active_status]
@@ -224,7 +224,7 @@
       height: 2
       width: 4
       type: table
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.system]
       measures: [records.count_matched, records.count]
@@ -284,7 +284,7 @@
       height: 4
       width: 6
       type: looker_pie
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.active_status]
       measures: [records.count]
@@ -328,7 +328,7 @@
       height: 2
       width: 4
       type: table
-      model: democash
+      model: demo_cash
       explore: records
       measures: [records.count, records.count_matched]
       dynamic_fields:
@@ -391,7 +391,7 @@
       height: 4
       width: 6
       type: looker_bar
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.system]
       pivots: [records.system]
@@ -435,7 +435,7 @@
       height: 4
       width: 4
       type: table
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.system]
       measures: [records.count]
@@ -488,7 +488,7 @@
       height: 4
       width: 6
       type: looker_column
-      model: democash
+      model: demo_cash
       explore: user_audit
       dimensions: [user_audit.action]
       pivots: [user_audit.action]
@@ -529,7 +529,7 @@
       top: 10
       width: 4
       type: table
-      model: democash
+      model: demo_cash
       explore: user_audit
       dimensions: [user_audit.action]
       measures: [user_audit.count]
@@ -580,7 +580,7 @@
       height: 4
       width: 6
       type: looker_column
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.assigned_to]
       pivots: [records.assigned_to]
@@ -623,7 +623,7 @@
       top: 10
       width: 4
       type: table
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.assigned_to]
       measures: [records.count]
@@ -676,7 +676,7 @@
       height: 4
       width: 6
       type: looker_pie
-      model: democash
+      model: demo_cash
       explore: exceptions
       dimensions: [exceptions.name]
       measures: [exceptions.count]
@@ -718,7 +718,7 @@
       top: 10
       width: 4
       type: table
-      model: democash
+      model: demo_cash
       explore: exceptions
       dimensions: [exceptions.name]
       measures: [exceptions.count]

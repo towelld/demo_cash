@@ -26,7 +26,7 @@
       top: 0
       height: 4
       width: 6
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.currency, records.post_date_date]
       pivots: [records.currency]
@@ -73,7 +73,7 @@
       top: 0
       height: 4
       width: 12
-      model: democash
+      model: demo_cash
       explore: v_running_balance
       dimensions: [v_running_balance.currency, v_running_balance.time]
       pivots: [v_running_balance.currency]
@@ -130,7 +130,7 @@
       top: 0
       height: 4
       width: 6
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.active_status]
       measures: [records.count]
@@ -176,7 +176,7 @@
       top: 4
       height: 4
       width: 24
-      model: democash
+      model: demo_cash
       explore: records
       dimensions: [records.account_no, records.system, records.currency, records.original_amount,
         records.sign, records.post_date_date, records.value_date, records.our_reference,
@@ -208,7 +208,7 @@
       top: 8
       height: 4
       width: 12
-      model: democash
+      model: demo_cash
       explore: v_cash_ageing
       dimensions: [v_cash_ageing.age, v_cash_ageing.currency]
       pivots: [v_cash_ageing.currency]
@@ -262,7 +262,7 @@
       top: 8
       height: 4
       width: 12
-      model: democash
+      model: demo_cash
       explore: v_running_balance
       dimensions: [v_running_balance.currency, v_running_balance.post_date]
       pivots: [v_running_balance.currency]
