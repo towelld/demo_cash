@@ -318,3 +318,6 @@
       series_colors:
         EUR - V Running Balance Sum Net: "#fa8d29"
         USD - V Running Balance Sum Net: "#646569"
+      reference_lines: [{reference_type: line, line_value: '0', range_start: max, range_end: min,
+                         margin_top: deviation, margin_value: mean, margin_bottom: deviation, label_position: right,
+                         color: "#646569"}]
