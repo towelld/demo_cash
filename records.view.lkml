@@ -4,12 +4,12 @@ view: records {
   dimension: account_no {
     type: string
     sql: ${TABLE}.AccountNo ;;
+    drill_fields: [cash_record*]
   }
 
   dimension: active_status {
     type: string
     sql: case ${TABLE}.ActiveStatus when 0 then 'Unmatched' when 1 then 'Matched' end;;
-    drill_fields: [cash_record*]
   }
 
   dimension: amount {
@@ -264,23 +264,27 @@ view: records {
 
   measure: count {
     type: count
-    drill_fields: []
+    drill_fields: [cash_record*]
   }
   measure: count_percent {
     type: percent_of_total
     sql: ${count};;
+    drill_fields: [cash_record*]
   }
   measure: sum_amount {
     type: sum
     sql: ${original_amount};;
+    drill_fields: [cash_record*]
   }
   measure: sum_amount_usd {
     type: sum
     sql: ${amount_usd};;
+    drill_fields: [cash_record*]
   }
   measure: count_matched {
     type: sum
     sql: ${TABLE}.ActiveStatus;;
+    drill_fields: [cash_record*]
   }
 
   set: cash_record {
