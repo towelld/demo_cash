@@ -219,3 +219,51 @@
       conditional_formatting_ignored_fields: []
       conditional_formatting_include_totals: false
       conditional_formatting_include_nulls: false
+
+    - name: ageing
+      title: Ageing
+      type: looker_column
+      model: democash
+      explore: v_cash_ageing
+      dimensions: [v_cash_ageing.age, v_cash_ageing.currency]
+      pivots: [v_cash_ageing.currency]
+      measures: [v_cash_ageing.sum_age_balance]
+      sorts: [v_cash_ageing.age desc, v_cash_ageing.sum_age_balance desc 0, v_cash_ageing.currency]
+      limit: '500'
+      column_limit: '50'
+      query_timezone: Europe/London
+      stacking: ''
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: true
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: false
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: false
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: none
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: "#808080"
+      show_row_numbers: true
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: editable
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      series_types: {}
+      series_colors:
+        EUR - V Cash Ageing Sum Age Balance: "#646569"
+        USD - V Cash Ageing Sum Age Balance: "#fa8d29"
