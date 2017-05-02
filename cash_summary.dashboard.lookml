@@ -1,6 +1,7 @@
 - dashboard: cash_summary
   title: Cash Summary
-  layout: tile
+  layout: static
+  width: 2400
   tile_size: 100
   embed_style:
     background_color: "#ffffff"
@@ -16,6 +17,10 @@
     - name: current_balance
       title: Current Balance
       type: looker_column
+      left: 0
+      top: 0
+      height: 4
+      width: 6
       model: democash
       explore: records
       dimensions: [records.currency, records.post_date_date]
@@ -58,6 +63,10 @@
     - name: running_balance
       title: Running Balance
       type: looker_area
+      left: 6
+      top: 0
+      height: 4
+      width: 12
       model: democash
       explore: v_running_balance
       dimensions: [v_running_balance.currency, v_running_balance.time]
@@ -109,6 +118,10 @@
     - name: match_rate
       title: Match Rate
       type: looker_pie
+      left: 18
+      top: 0
+      height: 4
+      width: 6
       model: democash
       explore: records
       dimensions: [records.active_status]
@@ -149,6 +162,10 @@
     - name: outstanding
       title: Outstanding
       type: table
+      left: 0
+      top: 4
+      height: 4
+      width: 24
       model: democash
       explore: records
       dimensions: [records.account_no, records.system, records.currency, records.original_amount,
@@ -175,6 +192,10 @@
     - name: ageing
       title: Ageing
       type: looker_column
+      left: 0
+      top: 8
+      height: 4
+      width: 12
       model: democash
       explore: v_cash_ageing
       dimensions: [v_cash_ageing.age, v_cash_ageing.currency]
@@ -223,6 +244,10 @@
     - name: historic_balance
       title: Historic Balance
       type: looker_line
+      left: 12
+      top: 8
+      height: 4
+      width: 12
       model: democash
       explore: v_running_balance
       dimensions: [v_running_balance.currency, v_running_balance.post_date]
