@@ -34,6 +34,7 @@ view: v_running_balance {
   dimension: time {
     type: string
     sql: ${TABLE}.time ;;
+    drill_fields: [cash_record*]
   }
 
   measure: count {
@@ -44,7 +45,6 @@ view: v_running_balance {
   measure: sum_net{
     type: sum
     sql: ${net};;
-    drill_fields: [cash_record*]
   }
 
   set: cash_record {
