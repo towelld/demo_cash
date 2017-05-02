@@ -294,7 +294,6 @@ view: records {
       currency,
       original_amount,
       sign,
-      post_date_date,
       post_date_time,
       value_date,
       our_reference,
