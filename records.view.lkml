@@ -9,6 +9,7 @@ view: records {
   dimension: active_status {
     type: string
     sql: case ${TABLE}.ActiveStatus when 0 then 'Unmatched' when 1 then 'Matched' end;;
+    drill_fields: [cash_record*]
   }
 
   dimension: amount {
@@ -280,6 +281,22 @@ view: records {
   measure: count_matched {
     type: sum
     sql: ${TABLE}.ActiveStatus;;
+  }
+
+  set: cash_record {
+    fields: [
+      account_no,
+      system,
+      currency,
+      original_amount,
+      sign,
+      post_date_date,
+      value_date,
+      our_reference,
+      reference1,
+      reference2,
+      reference3
+    ]
   }
 
 }
