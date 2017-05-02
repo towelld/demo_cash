@@ -100,4 +100,6 @@ explore: sign_off_pit {}
 
 explore: user_audit {}
 
+explore: v_cash_ageing {}
+
 explore: v_running_balance {}
