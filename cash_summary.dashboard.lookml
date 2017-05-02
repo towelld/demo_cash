@@ -14,7 +14,7 @@
   filters:
   - name: currency
     type: field_filter
-    model: democash
+    model: demo_cash
     explore: records
     field: records.currency
 
