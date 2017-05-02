@@ -40,4 +40,8 @@ view: v_cash_ageing {
     type: count
     drill_fields: []
   }
+  measure: sum_age_balance {
+    type: sum
+    sql: ${age_balance};;
+  }
 }
