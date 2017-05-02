@@ -134,6 +134,8 @@
       explore: records
       dimensions: [records.active_status]
       measures: [records.count]
+      listen:
+        currency: records.currency
       sorts: [records.count desc]
       limit: '500'
       column_limit: '50'
