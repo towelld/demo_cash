@@ -12,6 +12,11 @@
     tile_text_color: "#646569"
 
   filters:
+  - name: currency
+    type: field_filter
+    model: democash
+    explore: records
+    field: records.currency
 
   elements:
     - name: current_balance
@@ -29,7 +34,8 @@
       measures: [records.sum_amount]
       filters:
         records.open_date: 2016/01/29
-        records.currency: ''
+      listen:
+        currency: records.currency
       sorts: [records.currency, records.post_date_date desc]
       limit: '500'
       column_limit: '50'
