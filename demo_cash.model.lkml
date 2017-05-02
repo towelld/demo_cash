@@ -102,4 +102,10 @@ explore: user_audit {}
 
 explore: v_cash_ageing {}
 
-explore: v_running_balance {}
+explore: v_running_balance {
+  join: records {
+    type: left_outer
+    sql_on: ${v_running_balance.currency} = ${records.currency} and  ${v_running_balance.post_date}= ${records.post_date_date};;
+    relationship: many_to_one
+  }
+}
