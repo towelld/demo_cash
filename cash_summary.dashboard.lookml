@@ -67,7 +67,7 @@
         USD - Records Sum Amount: "#646569"
 
     - name: running_balance
-      title: Running Balance
+      title: Today's Running Balance
       type: looker_area
       left: 6
       top: 0
