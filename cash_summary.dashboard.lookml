@@ -80,6 +80,8 @@
       measures: [v_running_balance.sum_net]
       filters:
         v_running_balance.post_date: 29/01/2016
+      listen:
+        currency: v_running_balance.currency
       sorts: [v_running_balance.currency 0, v_running_balance.time]
       limit: '500'
       column_limit: '50'
@@ -179,6 +181,8 @@
         records.reference1, records.reference2, records.reference3, records.transaction_code]
       filters:
         records.active_status: Unmatched
+      listen:
+        currency: records.currency
       sorts: [records.post_date_date desc]
       limit: '500'
       column_limit: '50'
@@ -207,6 +211,8 @@
       dimensions: [v_cash_ageing.age, v_cash_ageing.currency]
       pivots: [v_cash_ageing.currency]
       measures: [v_cash_ageing.sum_age_balance]
+      listen:
+        currency: v_cash_ageing.currency
       sorts: [v_cash_ageing.age desc, v_cash_ageing.sum_age_balance desc 0, v_cash_ageing.currency]
       limit: '500'
       column_limit: '50'
@@ -259,6 +265,8 @@
       dimensions: [v_running_balance.currency, v_running_balance.post_date]
       pivots: [v_running_balance.currency]
       measures: [v_running_balance.sum_net]
+      listen:
+        currency: v_running_balance.currency
       sorts: [v_running_balance.post_date, v_running_balance.currency]
       limit: '500'
       column_limit: '50'
