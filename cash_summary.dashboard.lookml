@@ -4,7 +4,7 @@
   width: 2400
   tile_size: 100
   embed_style:
-    background_color: "#fffff0"
+    background_color: "#ffffff"
     show_title: true
     title_color: "#646569"
     show_filters_bar: true
