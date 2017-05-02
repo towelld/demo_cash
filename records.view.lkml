@@ -180,7 +180,7 @@ view: records {
   #}
   dimension_group: post_date {
     type: time
-    timeframes: [date, week, month]
+    timeframes: [date, week, month, time]
     convert_tz: no
     sql: ${TABLE}.PostDate ;;
   }
@@ -295,6 +295,7 @@ view: records {
       original_amount,
       sign,
       post_date_date,
+      post_date_time,
       value_date,
       our_reference,
       reference1,

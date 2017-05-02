@@ -179,7 +179,7 @@
       model: demo_cash
       explore: records
       dimensions: [records.account_no, records.system, records.currency, records.original_amount,
-        records.sign, records.post_date_date, records.value_date, records.our_reference,
+        records.sign, records.post_date_date, records.post_date_time, records.value_date, records.our_reference,
         records.reference1, records.reference2, records.reference3, records.transaction_code]
       filters:
         records.active_status: Unmatched
