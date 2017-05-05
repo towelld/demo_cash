@@ -95,8 +95,6 @@
       load_jobs.sum_duration: Duration (Seconds)
 
 
-
-
   - name: match_jobs
     title: Match Jobs
     left: 12

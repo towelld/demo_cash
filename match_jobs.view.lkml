@@ -17,7 +17,7 @@ view: match_jobs {
     timeframes: [date, week, month, time]
     convert_tz: no
     label: "End"
-    sql: DATEADD(millisecond,${TABLE}.LoadDuration,${TABLE}.DateTimeStamp) ;;
+    sql: DATEADD(millisecond,${TABLE}.Duration,${TABLE}.DateTimeStamp) ;;
   }
 
   dimension: duration {
