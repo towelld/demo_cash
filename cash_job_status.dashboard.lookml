@@ -73,7 +73,7 @@
     type: table
     model: demo_cash
     explore: load_jobs
-    dimensions: [load_jobs.file_name, load_jobs.start_date_time_stamp_time, load_jobs.end_date_time_stamp_time]
+    dimensions: [load_jobs.file_name, load_jobs.start_date_time_stamp_time, load_jobs.end_date_time_stamp_time,load_jobs.number_of_loaded_records, load_jobs.number_of_discarded_records]
     measures: [load_jobs.sum_duration]
     sorts: [load_jobs.start_date_time_stamp_time desc]
     limit: '500'
