@@ -13,6 +13,11 @@
     tile_text_color: "#646569"
 
   filters:
+  - name: feature_description
+    type: field_filter
+    model: demo_cash
+    explore: load_jobs
+    field: load_jobs.rec_name
 
   elements:
   - name: load_jobs
