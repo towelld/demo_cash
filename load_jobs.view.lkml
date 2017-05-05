@@ -1,13 +1,17 @@
 view: load_jobs {
   sql_table_name: DemoCash.LoadJobs ;;
 
-  dimension: start_date_time_stamp {
-    type: string
+  dimension_group: start_date_time_stamp {
+    type: time
+    timeframes: [date, week, month, time]
+    convert_tz: no
     label: "Start"
     sql: ${TABLE}.DateTimeStamp ;;
   }
-  dimension: end_date_time_stamp {
-    type: string
+  dimension_group: end_date_time_stamp {
+    type: time
+    timeframes: [date, week, month, time]
+    convert_tz: no
     label: "End"
     sql: DATEADD(millisecond,${TABLE}.LoadDuration,${TABLE}.DateTimeStamp) ;;
   }
