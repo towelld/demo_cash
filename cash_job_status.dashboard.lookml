@@ -68,7 +68,7 @@
     title: Detail
     left: 0
     top: 4
-    height: 4
+    height: 2
     width: 12
     type: table
     model: demo_cash
@@ -140,7 +140,7 @@
     title: Detail
     left: 12
     top: 4
-    height: 4
+    height: 2
     width: 12
     type: table
     model: demo_cash
@@ -170,8 +170,8 @@
   - name: match_details
     title: Match Details
     left: 0
-    top: 8
-    height: 4
+    top: 6
+    height: 2
     width: 18
     type: table
     model: demo_cash
@@ -200,8 +200,8 @@
   - name: unmatch_details
     title: Unmatch Details
     left: 18
-    top: 8
-    height: 4
+    top: 6
+    height: 2
     width: 6
     type: table
     model: demo_cash
@@ -246,4 +246,3 @@
     series_types: {}
     series_labels:
       records.count: Unmatched Count
-
