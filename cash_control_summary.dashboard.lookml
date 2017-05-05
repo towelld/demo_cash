@@ -16,8 +16,8 @@
   - name: feature_description
     type: field_filter
     model: demo_cash
-    explore: files
-    field: files.file_name
+    explore: load_jobs
+    field: load_jobs.file_name
 
   elements:
     - name: files_loaded_chart
