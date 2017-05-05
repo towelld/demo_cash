@@ -54,7 +54,7 @@ view: records {
 
   dimension: assigned_to {
     type: string
-    sql: isnull(${TABLE}.AssignedTo,'Unassigned') ;;
+    sql: isnull(substring(${TABLE}.AssignedTo,charindex('.',${TABLE}.AssignedTo)+1,200),'Unassigned');;
   }
 
   dimension: business_key {
