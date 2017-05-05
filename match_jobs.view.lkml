@@ -94,4 +94,9 @@ view: match_jobs {
     type: count
     drill_fields: [rec_name]
   }
+  measure: sum_duration {
+    type: sum
+    sql:${TABLE}.Duration/1000.0 ;;
+  }
+
 }

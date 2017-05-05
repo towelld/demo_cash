@@ -84,4 +84,8 @@ view: load_jobs {
     type: count
     drill_fields: [feed_name, file_name, rec_name]
   }
+  measure: sum_duration {
+    type: sum
+    sql:${TABLE}.LoadDuration/1000.0 ;;
+  }
 }
