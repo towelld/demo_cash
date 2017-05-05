@@ -166,3 +166,84 @@
       match_jobs.duration_secs: Duration (Seconds)
       match_jobs.number_of_matched_records: Matched
       match_jobs.number_of_suggested_records: Suggested
+
+  - name: match_details
+    title: Match Details
+    left: 0
+    top: 8
+    height: 4
+    width: 18
+    type: table
+    model: demo_cash
+    explore: groups
+    dimensions: [groups.match_name, groups.confidence]
+    measures: [groups.count]
+    sorts: [groups.match_name desc]
+    limit: '500'
+    column_limit: '50'
+    total: true
+    query_timezone: Europe/London
+    show_view_names: false
+    show_row_numbers: false
+    truncate_column_names: false
+    hide_totals: false
+    hide_row_totals: false
+    table_theme: gray
+    limit_displayed_rows: false
+    enable_conditional_formatting: false
+    conditional_formatting_ignored_fields: []
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    series_labels:
+      groups.count: Matched Groups
+
+  - name: unmatch_details
+    title: Unmatch Details
+    left: 18
+    top: 8
+    height: 4
+    width: 6
+    type: table
+    model: demo_cash
+    explore: records
+    measures: [records.count]
+    filters:
+      records.active_status: Unmatched
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    show_view_names: false
+    show_row_numbers: false
+    truncate_column_names: false
+    hide_totals: false
+    hide_row_totals: false
+    table_theme: gray
+    limit_displayed_rows: false
+    enable_conditional_formatting: false
+    conditional_formatting_ignored_fields: []
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    stacking: ''
+    show_value_labels: false
+    label_density: 25
+    legend_position: center
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    y_axis_combined: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    x_axis_scale: auto
+    y_axis_scale_mode: linear
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    series_types: {}
+    series_labels:
+      records.count: Unmatched Count
+
