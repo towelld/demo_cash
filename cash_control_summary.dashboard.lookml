@@ -140,9 +140,9 @@
       type: table
       model: demo_cash
       explore: match_jobs
-      dimensions: [match_jobs.date_time_stamp_time, match_jobs.duration_secs, match_jobs.number_of_matched_records,
+      dimensions: [match_jobs.start_date_time_stamp, match_jobs.duration_secs, match_jobs.number_of_matched_records,
         match_jobs.number_of_suggested_records]
-      sorts: [match_jobs.date_time_stamp_time desc]
+      sorts: [match_jobs.start_date_time_stamp desc]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London

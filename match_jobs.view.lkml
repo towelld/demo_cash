@@ -5,11 +5,16 @@ view: match_jobs {
   #  type: string
   #  sql: ${TABLE}.DateTimeStamp ;;
   #}
-  dimension_group: date_time_stamp {
-    type: time
-    timeframes: [time, date, week, month]
-    convert_tz: no
+
+  dimension: start_date_time_stamp {
+    type: string
+    label: "Start"
     sql: ${TABLE}.DateTimeStamp ;;
+  }
+  dimension: end_date_time_stamp {
+    type: string
+    label: "End"
+    sql: DATEADD(millisecond,${TABLE}.LoadDuration,${TABLE}.DateTimeStamp) ;;
   }
 
   dimension: duration {
