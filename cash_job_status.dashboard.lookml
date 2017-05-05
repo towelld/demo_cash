@@ -64,6 +64,39 @@
       our.txt - Load Jobs Sum Duration: "#646569"
     y_axis_labels: [Duration (Seconds)]
 
+  - name: load_jobs_detail
+    title: Detail
+    left: 0
+    top: 4
+    height: 4
+    width: 12
+    type: table
+    model: demo_cash
+    explore: load_jobs
+    dimensions: [load_jobs.file_name, load_jobs.start_date_time_stamp_time, load_jobs.end_date_time_stamp_time]
+    measures: [load_jobs.sum_duration]
+    sorts: [load_jobs.start_date_time_stamp_time desc]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: Europe/London
+    show_view_names: false
+    show_row_numbers: false
+    truncate_column_names: false
+    hide_totals: false
+    hide_row_totals: false
+    table_theme: gray
+    limit_displayed_rows: false
+    enable_conditional_formatting: false
+    conditional_formatting_ignored_fields: []
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    series_types: {}
+    series_labels:
+      load_jobs.sum_duration: Duration (Seconds)
+
+
+
+
   - name: match_jobs
     title: Match Jobs
     left: 12
