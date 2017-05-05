@@ -1,9 +1,15 @@
 view: load_jobs {
   sql_table_name: DemoCash.LoadJobs ;;
 
-  dimension: date_time_stamp {
+  dimension: start_date_time_stamp {
     type: string
+    label: "Start"
     sql: ${TABLE}.DateTimeStamp ;;
+  }
+  dimension: end_date_time_stamp {
+    type: string
+    label: "End"
+    sql: DATEADD(millisecond,${TABLE}.LoadDuration,${TABLE}.DateTimeStamp) ;;
   }
 
   dimension: feed_name {
