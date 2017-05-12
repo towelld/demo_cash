@@ -51,4 +51,10 @@ view: v_bcbs248 {
     type: count
     drill_fields: []
   }
+
+  measure: sum_net{
+    type: sum
+    sql: ${net};;
+  }
+
 }
