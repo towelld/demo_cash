@@ -49,3 +49,10 @@ explore: v_running_balance {
     relationship: many_to_one
   }
 }
+explore: v_bcbs248 {
+  join: records {
+    type: left_outer
+    sql_on: ${v_bcbs248.currency} = ${records.currency} and  ${v_bcbs248.post_date_date}= ${records.post_date_date};;
+    relationship: many_to_one
+  }
+}
