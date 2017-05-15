@@ -65,3 +65,5 @@
     series_types: {}
     x_axis_datetime_label: "%H:%M"
     y_axis_unpin: false
+    series_colors:
+      v_bcbs248.sum_net: "#646569"
