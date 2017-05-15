@@ -276,6 +276,11 @@ view: records {
     sql: ${original_amount};;
     drill_fields: [cash_record*]
   }
+  measure: average_amount {
+    type: average
+    sql: ${original_amount};;
+    drill_fields: [cash_record*]
+  }
   measure: sum_amount_usd {
     type: sum
     sql: ${amount_usd};;
