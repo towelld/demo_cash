@@ -57,6 +57,7 @@ view: v_bcbs248 {
 
   measure: sum_net{
     type: sum
+    value_format: "#,##0.00"
     sql: ${net};;
   }
 
