@@ -27,13 +27,14 @@
     default_value: "2016-01-29"
 
   elements:
+
   - name: net_cumulative_position
     title: Net Cumulative Position
     left: 0
     top: 0
     height: 4
     width: 24
-    type: looker_area
+    type: looker_line
     model: demo_cash
     explore: v_bcbs248
     dimensions: [v_bcbs248.post_date_time]
@@ -51,7 +52,7 @@
     legend_position: center
     x_axis_gridlines: true
     y_axis_gridlines: true
-    show_view_names: true
+    show_view_names: false
     limit_displayed_rows: false
     y_axis_combined: true
     show_y_axis_labels: false
@@ -63,7 +64,7 @@
     x_axis_scale: time
     y_axis_scale_mode: linear
     show_null_points: true
-    point_style: circle
+    point_style: circle_outline
     interpolation: linear
     show_totals_labels: false
     show_silhouette: false
@@ -73,6 +74,12 @@
     y_axis_unpin: false
     series_colors:
       v_bcbs248.sum_net: "#646569"
+      __FILE: demo_cash/cash_intraday.dashboard.lookml
+      __LINE_NUM: 75
+    x_axis_datetime_tick_count:
+    reference_lines: [{reference_type: line, line_value: '0', range_start: max, range_end: min,
+        margin_top: deviation, margin_value: mean, margin_bottom: deviation, label_position: right,
+        color: "#5e8aa9"}]
 
   - name: transaction_history
     title: Transaction History
