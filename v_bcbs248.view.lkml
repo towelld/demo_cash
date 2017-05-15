@@ -8,7 +8,7 @@ view: v_bcbs248 {
 
   dimension: net {
     type: number
-    value_format: "0.00"
+    value_format: "#,##0.00"
     sql: ${TABLE}.net ;;
   }
 
@@ -25,13 +25,13 @@ view: v_bcbs248 {
 
   dimension: received {
     type: number
-    value_format: "0.00"
+    value_format: "#,##0.00"
     sql: ${TABLE}.received ;;
   }
 
   dimension: sent {
     type: number
-    value_format: "0.00"
+    value_format: "#,##0.00"
     sql: ${TABLE}.sent ;;
   }
 
