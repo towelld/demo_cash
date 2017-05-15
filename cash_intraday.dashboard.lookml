@@ -16,9 +16,15 @@
   - name: currency
     type: field_filter
     model: demo_cash
-    explore: records
-    field: records.currency
-    default: USD
+    explore: v_bcbs248
+    field: v_bcbs248.currency
+    default_value: "USD"
+  - name: post_date
+    type: field_filter
+    model: demo_cash
+    explore: v_bcbs248
+    field: v_bcbs248.post_date_date
+    default_value: "2016/01/29"
 
   elements:
   - name: net_cumulative_position
@@ -32,10 +38,9 @@
     explore: v_bcbs248
     dimensions: [v_bcbs248.post_date_time]
     measures: [v_bcbs248.sum_net]
-    filters:
-      v_bcbs248.post_date_date: 2016/01/29
     listen:
       currency: v_bcbs248.currency
+      post_date: v_bcbs248.post_date_date
     sorts: [v_bcbs248.post_date_time]
     limit: '500'
     column_limit: '50'
@@ -79,10 +84,9 @@
     model: demo_cash
     explore: v_bcbs248
     dimensions: [v_bcbs248.post_date_time, v_bcbs248.sent, v_bcbs248.received, v_bcbs248.net]
-    filters:
-      v_bcbs248.post_date_date: 2016/01/29
     listen:
       currency: v_bcbs248.currency
+      post_date: v_bcbs248.post_date_date
     sorts: [v_bcbs248.post_date_time]
     limit: '500'
     column_limit: '50'
