@@ -13,6 +13,11 @@
     tile_text_color: "#646569"
 
   filters:
+  - name: currency
+    type: field_filter
+    model: demo_cash
+    explore: records
+    field: records.currency
 
   elements:
   - name: net_cumulative_position
@@ -27,8 +32,9 @@
     dimensions: [v_bcbs248.post_date_time]
     measures: [v_bcbs248.sum_net]
     filters:
-      v_bcbs248.currency: USD
       v_bcbs248.post_date_date: 2016/01/29
+    listen:
+      currency: v_bcbs248.currency
     sorts: [v_bcbs248.post_date_time]
     limit: '500'
     column_limit: '50'
