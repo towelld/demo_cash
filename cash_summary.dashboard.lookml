@@ -1,8 +1,8 @@
 - dashboard: cash_summary
   title: Cash Summary
   layout: static
-  width: 1620
-  tile_size: 90
+  width: 1632
+  tile_size: 68
   embed_style:
     background_color: "#ffffff"
     show_title: true
