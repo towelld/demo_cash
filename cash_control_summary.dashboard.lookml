@@ -65,10 +65,10 @@
 
     - name: files_loaded_detail
       title: Detail
-      left: 1
+      left: 0
       top: 4
       height: 2
-      width: 4
+      width: 6
       type: table
       model: demo_cash
       explore: load_jobs
@@ -138,10 +138,10 @@
 
     - name: match_rate_detail
       title: Detail
-      left: 7
+      left: 6
       top: 4
       height: 2
-      width: 4
+      width: 6
       type: table
       model: demo_cash
       explore: match_jobs
@@ -224,10 +224,10 @@
 
     - name: matched_percentage_detail
       title: Detail
-      left: 13
+      left: 12
       top: 4
       height: 2
-      width: 4
+      width: 6
       type: table
       model: demo_cash
       explore: records
@@ -328,10 +328,10 @@
 
     - name: records_matched_detail
       title: Detail
-      left: 19
+      left: 18
       top: 4
       height: 2
-      width: 4
+      width: 6
       type: table
       model: demo_cash
       explore: records
@@ -435,10 +435,10 @@
 
     - name: records_loaded_detail
       title: Detail
-      left: 1
+      left: 0
       top: 10
       height: 4
-      width: 4
+      width: 6
       type: table
       model: demo_cash
       explore: records
@@ -624,9 +624,9 @@
 
     - name: assignments_detail
       title: Detail
-      left: 13
+      left: 12
       top: 10
-      width: 4
+      width: 6
       type: table
       model: demo_cash
       explore: records
@@ -719,9 +719,9 @@
 
     - name: exceptions_detail
       title: Detail
-      left: 19
+      left: 18
       top: 10
-      width: 4
+      width: 6
       type: table
       model: demo_cash
       explore: exceptions
