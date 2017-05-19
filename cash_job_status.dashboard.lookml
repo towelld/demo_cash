@@ -1,8 +1,8 @@
 - dashboard: cash_job_status
   title: Cash Job Status
   layout: static
-  width: 2400
-  tile_size: 100
+  width: 1536
+  tile_size: 24
   auto_run: true
   embed_style:
     background_color: "#ffffff"
