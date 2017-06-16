@@ -36,7 +36,9 @@ explore: match_jobs {}
 
 explore: matches {}
 
-explore: records {}
+explore: records {
+  persist_for: "5 minutes"
+}
 
 explore: user_audit {}
 
