@@ -163,7 +163,7 @@ view: exceptions {
 
   dimension: currency {
     type:  string
-    sql: records.currency ;;
+    sql: ${records.currency} ;;
   }
 
   measure: count {
