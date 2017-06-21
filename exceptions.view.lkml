@@ -161,6 +161,11 @@ view: exceptions {
     sql: ${TABLE}.Version ;;
   }
 
+  dimension: account_no {
+    type:  string
+    sql: ${records.account_no} ;;
+  }
+
   dimension: currency {
     type:  string
     sql: ${records.currency} ;;
