@@ -178,6 +178,6 @@ view: exceptions {
   }
 
   set: records {
-    fields: [records.account_no,records.currency,records.original_amount]
+    fields: [records.account_no,records.currency, records.original_amount, records.post_date_time,records.reference_1,records.reference_2]
   }
 }
