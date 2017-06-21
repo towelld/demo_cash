@@ -14,7 +14,18 @@ explore: bcbsliquidity {}
 
 explore: exception_record_link {}
 
-explore: exceptions {}
+explore: exceptions {
+  join: exception_record_link {
+    type: left_outer
+    sql_on: ${exception_record_link.exception_pk} = ${exceptions.pk} ;;
+    relationship: many_to_one
+  }
+  join: records {
+    type: left_outer
+    sql_on: ${records.pk} = ${exception_record_link.record_pk} ;;
+    relationship: one_to_many
+  }
+}
 
 explore: file_record_link {
   join: files {

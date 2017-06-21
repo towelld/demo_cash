@@ -163,6 +163,10 @@ view: exceptions {
 
   measure: count {
     type: count
-    drill_fields: [name]
+    drill_fields: [records*]
+  }
+
+  set: records {
+    fields: [records.account_no,records.currency]
   }
 }
