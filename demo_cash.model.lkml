@@ -16,12 +16,12 @@ explore: exception_record_link {}
 
 explore: exceptions {
   join: exception_record_link {
-    type: left_outer
+    type: inner
     sql_on: ${exception_record_link.exception_pk} = ${exceptions.pk} ;;
     relationship: many_to_one
   }
   join: records {
-    type: left_outer
+    type: inner
     sql_on: ${records.pk} = ${exception_record_link.record_pk} ;;
     relationship: one_to_many
   }
