@@ -167,6 +167,6 @@ view: exceptions {
   }
 
   set: records {
-    fields: [records.account_no,records.currency]
+    fields: [records.account_no,records.currency,records.original_amount]
   }
 }
