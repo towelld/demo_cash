@@ -124,6 +124,7 @@ view: exceptions {
   dimension: pk {
     type: string
     sql: ${TABLE}.Pk ;;
+    primary_key: yes
   }
 
   dimension: raised {

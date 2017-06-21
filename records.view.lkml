@@ -172,6 +172,7 @@ view: records {
   dimension: pk {
     type: string
     sql: ${TABLE}.Pk ;;
+    primary_key: yes
   }
 
   #dimension: post_date {

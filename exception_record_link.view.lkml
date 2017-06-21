@@ -9,6 +9,7 @@ view: exception_record_link {
   dimension: pk {
     type: string
     sql: ${TABLE}.Pk ;;
+    primary_key: yes
   }
 
   dimension: record_pk {
