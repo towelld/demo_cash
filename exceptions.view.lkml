@@ -161,6 +161,11 @@ view: exceptions {
     sql: ${TABLE}.Version ;;
   }
 
+  dimension: currency {
+    type:  string
+    sql: records.currency ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [records*]
