@@ -72,8 +72,7 @@
       type: table
       model: demo_cash
       explore: load_jobs
-      dimensions: [load_jobs.file_name, load_jobs.number_of_loaded_records, load_jobs.number_of_discarded_records,
-        load_jobs.load_duration]
+      dimensions: [load_jobs.file_name, load_jobs.number_of_loaded_records, load_jobs.load_duration]
       sorts: [load_jobs.file_name]
       limit: '500'
       column_limit: '50'
