@@ -33,7 +33,7 @@
       fill_fields: [records.post_date_date]
       measures: [records.sum_amount]
       filters:
-        records.open_date: 2016/01/29
+        records.open_date: 2016/01/28
       listen:
         currency: records.currency
       sorts: [records.currency, records.post_date_date desc]
@@ -79,7 +79,7 @@
       pivots: [v_running_balance.currency]
       measures: [v_running_balance.sum_net]
       filters:
-        v_running_balance.post_date: 29/01/2016
+        v_running_balance.post_date: 28/01/2016
       listen:
         currency: v_running_balance.currency
       sorts: [v_running_balance.currency 0, v_running_balance.time]
