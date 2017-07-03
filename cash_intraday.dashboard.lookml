@@ -24,7 +24,7 @@
     model: demo_cash
     explore: v_bcbs248
     field: v_bcbs248.post_date_date
-    default_value: "2016-01-29"
+    default_value: "2016-01-28"
 
   elements:
 
