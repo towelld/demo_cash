@@ -12,6 +12,11 @@ view: records {
     sql: case ${TABLE}.ActiveStatus when 0 then 'Unmatched' when 1 then 'Matched' end;;
   }
 
+  dimension: match_status {
+    type: string
+    sql: case ${TABLE}.ActiveStatus when 0 then 'Unmatched' when 1 then 'Matched' end;;
+  }
+
   dimension: amount {
     type: number
     sql: ${TABLE}.Amount ;;
