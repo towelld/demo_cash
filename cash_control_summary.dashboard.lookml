@@ -59,9 +59,6 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-      series_colors:
-        bank.txt - Files Sum Records Loaded: "#5e8ab4"
-        our.txt - Files Sum Records Loaded: "#646569"
 
     - name: files_loaded_detail
       title: Detail
