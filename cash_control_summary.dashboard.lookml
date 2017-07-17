@@ -131,7 +131,7 @@
       totals_color: "#808080"
       series_types: {}
       series_colors:
-        groups.count: "#5e8ab4"
+        groups.count: "#646569"
       x_axis_datetime_label: "%H:%M:%S"
 
     - name: match_rate_detail
