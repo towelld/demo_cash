@@ -59,6 +59,8 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
+      colors: ["#fa8d29", "#646569", "#5e8ab4", "#0c9e9e", "#edc559", "#b34c59", "#76a2be"]
+      series_colors: {}
 
     - name: files_loaded_detail
       title: Detail
