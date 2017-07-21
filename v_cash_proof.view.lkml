@@ -14,6 +14,7 @@ view: v_cash_proof {
   dimension: lbl_bank {
     type: string
     sql: ${TABLE}.lbl_bank ;;
+    html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: lbl_close_balance {
@@ -49,6 +50,7 @@ view: v_cash_proof {
   dimension: lbl_net {
     type: string
     sql: ${TABLE}.lbl_net ;;
+    html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: lbl_open_balance {
@@ -72,7 +74,7 @@ view: v_cash_proof {
   dimension: lbl_ours {
     type: string
     sql: ${TABLE}.lbl_ours ;;
-    html: <p align="left">{{ value }}</p> ;;
+    html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: lbl_previous_close_balance {
