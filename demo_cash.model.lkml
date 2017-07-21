@@ -69,3 +69,5 @@ explore: v_bcbs248 {
     relationship: many_to_one
   }
 }
+
+explore: v_job_duration {}
