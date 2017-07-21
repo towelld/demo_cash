@@ -94,6 +94,7 @@ view: v_cash_proof {
   dimension: ldgr_current_close_bal {
     type: number
     sql: ${TABLE}.LdgrCurrentCloseBal ;;
+    value_format_name: decimal_2
   }
 
   dimension_group: ldgr_current_close_bal {
@@ -113,26 +114,31 @@ view: v_cash_proof {
   dimension: ldgr_current_day_count_credits {
     type: number
     sql: ${TABLE}.LdgrCurrentDayCountCredits ;;
+    value_format_name: decimal_2
   }
 
   dimension: ldgr_current_day_count_debits {
     type: number
     sql: ${TABLE}.LdgrCurrentDayCountDebits ;;
+    value_format_name: decimal_2
   }
 
   dimension: ldgr_current_day_total_credits {
     type: number
     sql: ${TABLE}.LdgrCurrentDayTotalCredits ;;
+    value_format_name: decimal_2
   }
 
   dimension: ldgr_current_day_total_debits {
     type: number
     sql: ${TABLE}.LdgrCurrentDayTotalDebits ;;
+    value_format_name: decimal_2
   }
 
   dimension: ldgr_current_open_bal {
     type: number
     sql: ${TABLE}.LdgrCurrentOpenBal ;;
+    value_format_name: decimal_2
   }
 
   dimension_group: ldgr_current_open_bal {
@@ -152,6 +158,7 @@ view: v_cash_proof {
   dimension: ldgr_previous_close_bal {
     type: number
     sql: ${TABLE}.LdgrPreviousCloseBal ;;
+    value_format_name: decimal_2
   }
 
   dimension_group: ldgr_previous_close_bal_date {
@@ -171,6 +178,7 @@ view: v_cash_proof {
   dimension: ldgr_previous_open_bal {
     type: number
     sql: ${TABLE}.LdgrPreviousOpenBal ;;
+    value_format_name: decimal_2
   }
 
   dimension_group: ldgr_previous_open_bal {
