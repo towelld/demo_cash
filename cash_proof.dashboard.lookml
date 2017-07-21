@@ -50,11 +50,22 @@
 
   - name: lbl_previous_close_date
     left: 0
-    top: 1
+    top: 2
     height: 1
     width: 3
     type: single_value
     model: demo_cash
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_previous_close_date]
+    show_single_value_title: false
+
+  - name: lbl_previous_close_balance
+    left: 0
+    top: 3
+    height: 1
+    width: 3
+    type: single_value
+    model: demo_cash
+    explore: v_cash_proof
+    dimensions: [v_cash_proof.lbl_previous_close_balance]
     show_single_value_title: false
