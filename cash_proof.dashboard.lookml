@@ -15,7 +15,7 @@
   filters:
 
   elements:
-  - name: ldgr_ours
+  - name: lbl_ours
     type: single_value
     left: 3
     top: 0

@@ -250,11 +250,11 @@ view: v_cash_proof {
 
   dimension: lbl_ours {
     type: string
-    sql: "Ours" ;;
+    sql: 'Ours' ;;
   }
   dimension: lbl_prev_close_date {
     type: string
-    sql: "Previous Close Date" ;;
+    sql: 'Previous Close Date' ;;
   }
 
 
