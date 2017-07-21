@@ -13,6 +13,12 @@
     tile_text_color: "#646569"
 
   filters:
+  - name: account_no
+    type: field_filter
+    model: demo_cash
+    explore: v_cash_proof
+    field: v_cash_proof.account_no
+    default: "10928771"
 
   elements:
   - name: lbl_ours
@@ -25,6 +31,9 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_ours]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
+
 
   - name: lbl_bank
     left: 8
