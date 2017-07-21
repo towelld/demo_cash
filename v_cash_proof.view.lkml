@@ -154,7 +154,7 @@ view: v_cash_proof {
     sql: ${TABLE}.LdgrPreviousCloseBal ;;
   }
 
-  dimension_group: ldgr_previous_close_bal {
+  dimension_group: ldgr_previous_close_bal_date {
     type: time
     timeframes: [
       raw,
@@ -270,7 +270,7 @@ view: v_cash_proof {
     sql: ${TABLE}.StmtPreviousCloseBal ;;
   }
 
-  dimension_group: stmt_previous_close_bal {
+  dimension_group: stmt_previous_close_bal_date {
     type: time
     timeframes: [
       raw,
