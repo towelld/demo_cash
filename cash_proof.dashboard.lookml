@@ -146,3 +146,36 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.stmt_current_open_bal]
     show_single_value_title: false
+
+  - name: lbl_open_date
+    left: 0
+    top: 4
+    height: 1
+    width: 4
+    type: single_value
+    model: demo_cash
+    explore: v_cash_proof
+    dimensions: [v_cash_proof.lbl_open_date]
+    show_single_value_title: false
+
+  - name: ldgr_current_open_bal_date
+    left: 4
+    top: 4
+    height: 1
+    width: 4
+    type: single_value
+    model: demo_cash
+    explore: v_cash_proof
+    dimensions: [v_cash_proof.ldgr_current_open_bal_date_date]
+    show_single_value_title: false
+
+  - name: stmt_current_open_bal_date
+    left: 8
+    top: 4
+    height: 1
+    width: 4
+    type: single_value
+    model: demo_cash
+    explore: v_cash_proof
+    dimensions: [v_cash_proof.stmt_current_open_bal_date_date]
+    show_single_value_title: false
