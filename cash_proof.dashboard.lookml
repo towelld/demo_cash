@@ -31,9 +31,6 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_ours]
     show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
 
   - name: lbl_bank
     left: 8
