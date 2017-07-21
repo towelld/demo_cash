@@ -18,7 +18,7 @@
     model: demo_cash
     explore: v_cash_proof
     field: v_cash_proof.account_no
-    default: "10928771"
+    default_value: "10928771"
 
   elements:
   - name: lbl_ours
