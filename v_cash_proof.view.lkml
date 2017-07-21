@@ -11,6 +11,86 @@ view: v_cash_proof {
     sql: ${TABLE}.Currency ;;
   }
 
+  dimension: lbl_bank {
+    type: string
+    sql: ${TABLE}.lbl_bank ;;
+  }
+
+  dimension: lbl_close_balance {
+    type: string
+    sql: ${TABLE}.lbl_close_balance ;;
+  }
+
+  dimension: lbl_close_date {
+    type: string
+    sql: ${TABLE}.lbl_close_date ;;
+  }
+
+  dimension: lbl_credits {
+    type: string
+    sql: ${TABLE}.lbl_credits ;;
+  }
+
+  dimension: lbl_debits {
+    type: string
+    sql: ${TABLE}.lbl_debits ;;
+  }
+
+  dimension: lbl_difference {
+    type: string
+    sql: ${TABLE}.lbl_difference ;;
+  }
+
+  dimension: lbl_net {
+    type: string
+    sql: ${TABLE}.lbl_net ;;
+  }
+
+  dimension: lbl_open_balance {
+    type: string
+    sql: ${TABLE}.lbl_open_balance ;;
+  }
+
+  dimension: lbl_open_date {
+    type: string
+    sql: ${TABLE}.lbl_open_date ;;
+  }
+
+  dimension: lbl_open_plus_transactions {
+    type: string
+    sql: ${TABLE}.lbl_open_plus_transactions ;;
+  }
+
+  dimension: lbl_ours {
+    type: string
+    sql: ${TABLE}.lbl_ours ;;
+  }
+
+  dimension: lbl_previous_close_balance {
+    type: string
+    sql: ${TABLE}.lbl_previous_close_balance ;;
+  }
+
+  dimension: lbl_previous_close_date {
+    type: string
+    sql: ${TABLE}.lbl_previous_close_date ;;
+  }
+
+  dimension: lbl_statement_transactions {
+    type: string
+    sql: ${TABLE}.lbl_statement_transactions ;;
+  }
+
+  dimension: lbl_unmatched_transactions {
+    type: string
+    sql: ${TABLE}.lbl_unmatched_transactions ;;
+  }
+
+  dimension: lbl_write_off_adjustments {
+    type: string
+    sql: ${TABLE}.lbl_write_off_adjustments ;;
+  }
+
   dimension: ldgr_current_close_bal {
     type: number
     sql: ${TABLE}.LdgrCurrentCloseBal ;;
@@ -248,23 +328,8 @@ view: v_cash_proof {
     sql: ${TABLE}.WriteOffAdjustment ;;
   }
 
-  dimension: lbl_ours {
-    type: string
-    sql: case when 1=1 then 'Ours' end ;;
-  }
-  dimension: lbl_prev_close_date {
-    type: string
-    sql: case when 1=1 then 'Previous Clsoe Date' end ;;
-    }
-
-
-
   measure: count {
     type: count
     drill_fields: []
   }
-
-
-
-
 }

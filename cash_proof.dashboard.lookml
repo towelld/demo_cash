@@ -27,7 +27,7 @@
     fill_fields: [v_cash_proof.lbl_ours]
     show_single_value_title: false
 
-  - name: lbl_prev_close_date
+  - name: lbl_previous_close_date
     type: single_value
     left: 0
     top: 1
@@ -35,8 +35,8 @@
     width: 3
     model: demo_cash
     explore: v_cash_proof
-    dimensions: [v_cash_proof.lbl_prev_close_date]
-    fill_fields: [v_cash_proof.lbl_prev_close_date]
+    dimensions: [v_cash_proof.lbl_previous_close_date]
+    fill_fields: [v_cash_proof.lbl_previous_close_date]
     show_single_value_title: false
 
   - name: ldgr_previous_close_bal_date
