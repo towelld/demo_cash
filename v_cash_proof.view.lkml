@@ -248,8 +248,23 @@ view: v_cash_proof {
     sql: ${TABLE}.WriteOffAdjustment ;;
   }
 
+  dimension: lbl_ours {
+    type: string
+    sql: "Ours" ;;
+  }
+  dimension: lbl_prev_close_date {
+    type: string
+    sql: "Previous Close Date" ;;
+  }
+
+
+
   measure: count {
     type: count
     drill_fields: []
   }
+
+
+
+
 }
