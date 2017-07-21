@@ -70,4 +70,6 @@ explore: v_bcbs248 {
   }
 }
 
-explore: v_cash_proof {}
+explore: v_cash_proof {
+  persist_for: "1 minutes"
+}
