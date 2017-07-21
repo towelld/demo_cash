@@ -69,11 +69,13 @@ view: v_cash_proof {
   dimension: lbl_previous_close_balance {
     type: string
     sql: ${TABLE}.lbl_previous_close_balance ;;
+    html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: lbl_previous_close_date {
     type: string
     sql: ${TABLE}.lbl_previous_close_date ;;
+    html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: lbl_statement_transactions {
