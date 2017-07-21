@@ -17,6 +17,10 @@
   elements:
   - name: ldgr_previous_close_bal_date
     type: single_value
+    left: 0
+    top: 0
+    height: 1
+    width: 2
     model: demo_cash
     explore: v_cash_proof
     dimensions: [v_cash_proof.ldgr_previous_close_bal_date]
