@@ -114,7 +114,7 @@ view: v_cash_proof {
     value_format_name: decimal_2
   }
 
-  dimension_group: ldgr_current_close_bal {
+  dimension_group: ldgr_current_close_bal_date {
     type: time
     timeframes: [
       raw,
@@ -164,7 +164,7 @@ view: v_cash_proof {
     html: <p align="right">{{ value }}</p> ;;
   }
 
-  dimension_group: ldgr_current_open_bal {
+  dimension_group: ldgr_current_open_bal_date {
     type: time
     timeframes: [
       raw,
@@ -208,7 +208,7 @@ view: v_cash_proof {
     html: <p align="right">{{ value }}</p> ;;
   }
 
-  dimension_group: ldgr_previous_open_bal {
+  dimension_group: ldgr_previous_open_bal_date {
     type: time
     timeframes: [
       raw,
@@ -226,34 +226,39 @@ view: v_cash_proof {
   dimension: ldgr_unmatched_count_credits {
     type: number
     sql: ${TABLE}.LdgrUnmatchedCountCredits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: ldgr_unmatched_count_debits {
     type: number
     sql: ${TABLE}.LdgrUnmatchedCountDebits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: ldgr_unmatched_total_credits {
     type: number
     sql: ${TABLE}.LdgrUnmatchedTotalCredits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: ldgr_unmatched_total_debits {
     type: number
     sql: ${TABLE}.LdgrUnmatchedTotalDebits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: stmt_current_close_bal {
     type: number
     sql: ${TABLE}.StmtCurrentCloseBal ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
-  dimension_group: stmt_current_close_bal {
+  dimension_group: stmt_current_close_bal_date {
     type: time
     timeframes: [
       raw,
@@ -271,34 +276,39 @@ view: v_cash_proof {
   dimension: stmt_current_day_count_credits {
     type: number
     sql: ${TABLE}.StmtCurrentDayCountCredits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: stmt_current_day_count_debits {
     type: number
     sql: ${TABLE}.StmtCurrentDayCountDebits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: stmt_current_day_total_credits {
     type: number
     sql: ${TABLE}.StmtCurrentDayTotalCredits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: stmt_current_day_total_debits {
     type: number
     sql: ${TABLE}.StmtCurrentDayTotalDebits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: stmt_current_open_bal {
     type: number
     sql: ${TABLE}.StmtCurrentOpenBal ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
-  dimension_group: stmt_current_open_bal {
+  dimension_group: stmt_current_open_bal_date {
     type: time
     timeframes: [
       raw,
@@ -316,6 +326,7 @@ view: v_cash_proof {
   dimension: stmt_previous_close_bal {
     type: number
     sql: ${TABLE}.StmtPreviousCloseBal ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
@@ -337,10 +348,11 @@ view: v_cash_proof {
   dimension: stmt_previous_open_bal {
     type: number
     sql: ${TABLE}.StmtPreviousOpenBal ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
-  dimension_group: stmt_previous_open_bal {
+  dimension_group: stmt_previous_open_bal_date {
     type: time
     timeframes: [
       raw,
@@ -358,30 +370,35 @@ view: v_cash_proof {
   dimension: stmt_unmatched_count_credits {
     type: number
     sql: ${TABLE}.StmtUnmatchedCountCredits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: stmt_unmatched_count_debits {
     type: number
     sql: ${TABLE}.StmtUnmatchedCountDebits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: stmt_unmatched_total_credits {
     type: number
     sql: ${TABLE}.StmtUnmatchedTotalCredits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: stmt_unmatched_total_debits {
     type: number
     sql: ${TABLE}.StmtUnmatchedTotalDebits ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
   dimension: write_off_adjustment {
     type: number
     sql: ${TABLE}.WriteOffAdjustment ;;
+    value_format_name: decimal_2
     html: <p align="right">{{ value }}</p> ;;
   }
 
