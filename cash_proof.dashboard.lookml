@@ -91,3 +91,25 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_previous_close_balance]
     show_single_value_title: false
+
+  - name: ldgr_previous_close_bal
+    left: 4
+    top: 2
+    height: 1
+    width: 4
+    type: single_value
+    model: demo_cash
+    explore: v_cash_proof
+    dimensions: [v_cash_proof.ldgr_previous_close_bal]
+    show_single_value_title: false
+
+  - name: stmt_previous_close_bal
+    left: 8
+    top: 2
+    height: 1
+    width: 4
+    type: single_value
+    model: demo_cash
+    explore: v_cash_proof
+    dimensions: [v_cash_proof.stmt_previous_close_bal]
+    show_single_value_title: false
