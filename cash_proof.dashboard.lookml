@@ -19,7 +19,7 @@
     type: single_value
     left: 0
     top: 0
-    height: 1
+    height: 2
     width: 2
     model: demo_cash
     explore: v_cash_proof
