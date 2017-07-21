@@ -8,7 +8,7 @@
     background_color: "#ffffff"
     show_title: true
     title_color: "#646569"
-    show_filters_bar: false
+    show_filters_bar: true
     tile_background_color: "#ffffff"
     tile_text_color: "#646569"
 
@@ -31,6 +31,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_ours]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: lbl_bank
     left: 8
@@ -42,6 +44,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_bank]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: lbl_net
     left: 12
@@ -53,6 +57,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_net]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: lbl_previous_close_date
     left: 0
@@ -64,6 +70,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_previous_close_date]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: ldgr_previous_close_bal_date
     left: 4
@@ -75,6 +83,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.ldgr_previous_close_bal_date_date]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: stmt_previous_close_bal_date
     left: 8
@@ -86,6 +96,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.stmt_previous_close_bal_date_date]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: lbl_previous_close_balance
     left: 0
@@ -97,6 +109,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_previous_close_balance]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: ldgr_previous_close_bal
     left: 4
@@ -108,6 +122,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.ldgr_previous_close_bal]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: stmt_previous_close_bal
     left: 8
@@ -119,6 +135,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.stmt_previous_close_bal]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: lbl_open_balance
     left: 0
@@ -130,6 +148,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_open_balance]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: ldgr_current_open_bal
     left: 4
@@ -141,6 +161,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.ldgr_current_open_bal]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: stmt_current_open_bal
     left: 8
@@ -152,6 +174,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.stmt_current_open_bal]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: lbl_open_date
     left: 0
@@ -163,6 +187,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.lbl_open_date]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: ldgr_current_open_bal_date
     left: 4
@@ -174,6 +200,8 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.ldgr_current_open_bal_date_date]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
 
   - name: stmt_current_open_bal_date
     left: 8
@@ -185,3 +213,5 @@
     explore: v_cash_proof
     dimensions: [v_cash_proof.stmt_current_open_bal_date_date]
     show_single_value_title: false
+    listen:
+      account_no: v_cash_proof.account_no
