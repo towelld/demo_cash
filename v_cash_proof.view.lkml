@@ -182,7 +182,7 @@ view: v_cash_proof {
   dimension: ldgr_previous_close_bal {
     type: number
     sql: ${TABLE}.LdgrPreviousCloseBal ;;
-    value_format_name: decimal_2
+    value_format: "#,##0.00"
     html: <p align="right">{{ value }}</p> ;;
   }
 
