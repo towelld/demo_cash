@@ -28,6 +28,6 @@
     sorts: [v_cash_proof.ldgr_previous_close_bal_date desc]
     show_single_value_title: false
     note:
-    text: 'Ours'
-    state: expanded
-    display: above
+      text: 'Ours'
+      state: expanded
+      display: above
