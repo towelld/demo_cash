@@ -16,10 +16,10 @@
 
   elements:
   - name: lbl_ours
-    left: 3
+    left: 4
     top: 0
     height: 1
-    width: 3
+    width: 4
     type: single_value
     model: demo_cash
     explore: v_cash_proof
@@ -27,10 +27,10 @@
     show_single_value_title: false
 
   - name: lbl_bank
-    left: 6
+    left: 8
     top: 0
     height: 1
-    width: 3
+    width: 4
     type: single_value
     model: demo_cash
     explore: v_cash_proof
@@ -38,10 +38,10 @@
     show_single_value_title: false
 
   - name: lbl_net
-    left: 9
+    left: 12
     top: 0
     height: 1
-    width: 3
+    width: 4
     type: single_value
     model: demo_cash
     explore: v_cash_proof
@@ -52,7 +52,7 @@
     left: 0
     top: 1
     height: 1
-    width: 3
+    width: 4
     type: single_value
     model: demo_cash
     explore: v_cash_proof
@@ -60,10 +60,10 @@
     show_single_value_title: false
 
   - name: ldgr_previous_close_bal_date
-    left: 3
+    left: 4
     top: 1
     height: 1
-    width: 3
+    width: 4
     type: single_value
     model: demo_cash
     explore: v_cash_proof
@@ -71,10 +71,10 @@
     show_single_value_title: false
 
   - name: stmt_previous_close_bal_date
-    left: 6
+    left: 8
     top: 1
     height: 1
-    width: 3
+    width: 4
     type: single_value
     model: demo_cash
     explore: v_cash_proof
@@ -85,7 +85,7 @@
     left: 0
     top: 2
     height: 1
-    width: 3
+    width: 4
     type: single_value
     model: demo_cash
     explore: v_cash_proof
