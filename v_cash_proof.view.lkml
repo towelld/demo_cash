@@ -161,9 +161,9 @@ view: v_cash_proof {
     type: number
     sql: ${TABLE}.LdgrCurrentOpenBal ;;
     value_format_name: decimal_2
-    html: {% if ldgr_current_open_bal.value = ldgr_previous_close_bal
+    html: {% if ldgr_current_open_bal.value = ldgr_previous_close_bal %}
                  <p align="right"><font color="#EAA153">{{ rendered_value }}</font></p>
-          %} ;;
+          {% endif %} ;;
   }
 
   dimension_group: ldgr_current_open_bal_date {
