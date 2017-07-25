@@ -26,9 +26,11 @@ view: cash_proof_ca {
     type: string
     sql: ${TABLE}.ours ;;
     html: {% if (cash_proof_ca.label._value == "Open Balance" and cash_proof_ca.ours._value == cash_proof_ca.theirs._value) %}
-                 <p align="right"><font color="#92c26e">{{ rendered_value }}</font></p>
-          {% elseif (cash_proof_ca.label._value == "Open Balance" and cash_proof_ca.ours._value != cash_proof_ca.theirs._value) %}
-                 <p align="right"><font color="#df5555">{{ rendered_value }}</font></p>
+              <p align="right"><font color="#92c26e">{{ rendered_value }}</font></p>
+          {% elsif (cash_proof_ca.label._value == "Open Balance" and cash_proof_ca.ours._value != cash_proof_ca.theirs._value) %}
+              <p align="right"><font color="#df5555">{{ rendered_value }}</font></p>
+          {% else %}
+              <p align="right">{{ rendered_value }}</p>
           {% endif %} ;;
   }
 
