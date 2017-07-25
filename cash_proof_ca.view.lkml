@@ -1,5 +1,5 @@
-view: v_cash_proof_ca {
-  sql_table_name: dbo.v_cash_proof_ca ;;
+view: cash_proof_ca {
+  sql_table_name: DemoCash.CashProofCA ;;
 
   dimension: account_no {
     type: string

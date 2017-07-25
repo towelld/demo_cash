@@ -16,8 +16,8 @@
   - name: account_no
     type: field_filter
     model: demo_cash
-    explore: v_cash_proof_ca
-    field: v_cash_proof_ca.account_no
+    explore: cash_proof_ca
+    field: cash_proof_ca.account_no
     default_value: "10928771"
 
   elements:
@@ -29,13 +29,13 @@
       height: 4
       width: 12
       model: demo_cash
-      explore: v_cash_proof_ca
-      dimensions: [v_cash_proof_ca.sortorder, v_cash_proof_ca.label, v_cash_proof_ca.ours,
-        v_cash_proof_ca.ours_count, v_cash_proof_ca.theirs, v_cash_proof_ca.theirs_count,
-        v_cash_proof_ca.net]
+      explore: cash_proof_ca
+      dimensions: [cash_proof_ca.sortorder, cash_proof_ca.label, cash_proof_ca.ours,
+        cash_proof_ca.ours_count, cash_proof_ca.theirs, cash_proof_ca.theirs_count,
+        cash_proof_ca.net]
       listen:
-        account_no: v_cash_proof_ca.account_no
-      sorts: [v_cash_proof_ca.sortorder]
+        account_no: cash_proof_ca.account_no
+      sorts: [cash_proof_ca.sortorder]
       limit: '500'
       column_limit: '50'
       query_timezone: America/Los_Angeles
@@ -50,7 +50,7 @@
       conditional_formatting_ignored_fields: []
       conditional_formatting_include_totals: false
       conditional_formatting_include_nulls: false
-      hidden_fields: [v_cash_proof_ca.sortorder]
+      hidden_fields: [cash_proof_ca.sortorder]
       series_labels:
         v_cash_proof_ca.label: Description
         v_cash_proof_ca.ours_count: Count
