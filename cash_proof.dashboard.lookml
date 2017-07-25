@@ -27,7 +27,7 @@
       left: 0
       top: 0
       height: 4
-      width: 12
+      width: 30
       model: demo_cash
       explore: cash_proof_ca
       dimensions: [cash_proof_ca.sortorder, cash_proof_ca.label, cash_proof_ca.ours,
