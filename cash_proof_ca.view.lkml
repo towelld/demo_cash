@@ -44,8 +44,8 @@ view: cash_proof_ca {
   dimension: ours {
     type: string
     sql: ${TABLE}.ours ;;
-    html: {% if cash_proof_ca.label._value == " " and cash_proof_ca.label.ours != " " %}
-                <p align="right" style="border-top:solid">{{ rendered_value }}</p>
+    html: {% if cash_proof_ca.label._value == "" and cash_proof_ca.label.ours != "" %}
+                <p align="right" style="border-top:solid;border-width:1px">{{ rendered_value }}</p>
           {% else %}
                 <p align="right">{{ rendered_value }}</p>
           {% endif %} ;;
