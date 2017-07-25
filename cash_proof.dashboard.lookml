@@ -22,7 +22,7 @@
 
   elements:
     - name: cash_proof
-      title: Cash Proof
+      title: Position
       type: table
       left: 0
       top: 0
@@ -56,3 +56,41 @@
         cash_proof_ca.ours_count: Count
         cash_proof_ca.theirs_count: Count
         cash_proof_ca.net_check: Check
+
+    - name: our_ageing
+      title: Aged Analysis - Ours
+      type: table
+      left: 12
+      top: 0
+      height: 12
+      width: 4
+      model: demo_cash
+      explore: v_cash_proof_ageing_ca
+      dimensions: [v_cash_proof_ageing_ca.the_sort, v_cash_proof_ageing_ca.the_age, v_cash_proof_ageing_ca.the_count,
+        v_cash_proof_ageing_ca.the_payment, v_cash_proof_ageing_ca.the_receipt, v_cash_proof_ageing_ca.the_balance]
+      filters:
+        v_cash_proof_ageing_ca.account_no: '10928771'
+        v_cash_proof_ageing_ca.system: our
+      sorts: [v_cash_proof_ageing_ca.the_sort]
+      limit: '500'
+      column_limit: '50'
+      total: true
+      query_timezone: America/Los_Angeles
+      show_view_names: false
+      show_row_numbers: false
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: transparent
+      limit_displayed_rows: false
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      hidden_fields: [v_cash_proof_ageing_ca.the_sort]
+      series_labels:
+        v_cash_proof_ageing_ca.the_age: Age
+        v_cash_proof_ageing_ca.the_count: Count
+        v_cash_proof_ageing_ca.the_payment: Payments
+        v_cash_proof_ageing_ca.the_receipt: Receipts
+        v_cash_proof_ageing_ca.the_balance: Net
