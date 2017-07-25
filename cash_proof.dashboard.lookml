@@ -60,10 +60,10 @@
     - name: our_ageing
       title: Aged Analysis - Ours
       type: table
-      left: 12
+      left: 14
       top: 0
       height: 4
-      width: 12
+      width: 10
       model: demo_cash
       explore: v_cash_proof_ageing_ca
       dimensions: [v_cash_proof_ageing_ca.the_sort, v_cash_proof_ageing_ca.the_age, v_cash_proof_ageing_ca.the_count,
@@ -99,10 +99,10 @@
     - name: bank_ageing
       title: Aged Analysis - Bank
       type: table
-      left: 12
+      left: 14
       top: 4
       height: 4
-      width: 12
+      width: 10
       model: demo_cash
       explore: v_cash_proof_ageing_ca
       dimensions: [v_cash_proof_ageing_ca.the_sort, v_cash_proof_ageing_ca.the_age, v_cash_proof_ageing_ca.the_count,
@@ -130,6 +130,41 @@
       hidden_fields: [v_cash_proof_ageing_ca.the_sort]
       series_labels:
         v_cash_proof_ageing_ca.the_age: Age
+        v_cash_proof_ageing_ca.the_count: Count
+        v_cash_proof_ageing_ca.the_payment: Payments
+        v_cash_proof_ageing_ca.the_receipt: Receipts
+        v_cash_proof_ageing_ca.the_balance: Net
+
+
+    - name: ageing
+      title: Aged Analysis
+      type: table
+      left: 14
+      top: 8
+      height: 4
+      width: 10
+      model: demo_cash
+      explore: v_cash_proof_ageing_ca
+      dimensions: [v_cash_proof_ageing_ca.the_count,
+        v_cash_proof_ageing_ca.the_payment, v_cash_proof_ageing_ca.the_receipt, v_cash_proof_ageing_ca.the_balance]
+      listen:
+        account_no: v_cash_proof_ageing_ca.account_no
+      limit: '500'
+      column_limit: '50'
+      total: true
+      query_timezone: America/Los_Angeles
+      show_view_names: false
+      show_row_numbers: false
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: transparent
+      limit_displayed_rows: false
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      series_labels:
         v_cash_proof_ageing_ca.the_count: Count
         v_cash_proof_ageing_ca.the_payment: Payments
         v_cash_proof_ageing_ca.the_receipt: Receipts
