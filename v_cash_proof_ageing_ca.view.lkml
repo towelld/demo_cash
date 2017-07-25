@@ -49,16 +49,19 @@ view: v_cash_proof_ageing_ca {
   measure: sum_balance {
     type: sum
     sql: ${the_balance} ;;
+    value_format_name: decimal_2
     drill_fields: []
   }
   measure: sum_payment {
     type: sum
     sql: ${the_payment} ;;
+    value_format_name: decimal_2
     drill_fields: []
   }
   measure: sum_receipt {
     type: sum
     sql: ${the_receipt} ;;
+    value_format_name: decimal_2
     drill_fields: []
   }
 }

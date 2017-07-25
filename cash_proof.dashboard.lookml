@@ -183,7 +183,7 @@
       title: Aged Analysis
       type: table
       left: 14
-      top: 9
+      top: 6
       height: 3
       width: 10
       model: demo_cash
