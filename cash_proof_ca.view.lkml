@@ -19,7 +19,7 @@ view: cash_proof_ca {
           {% elsif cash_proof_ca.label._value == "Debits" %}
                 <p align="center">{{ rendered_value }}</p>
           {% else %}
-                <p align="right">{{ rendered_value }}</p>
+                <p align="left">{{ rendered_value }}</p>
           {% endif %} ;;
   }
 
