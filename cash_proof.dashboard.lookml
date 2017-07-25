@@ -16,202 +16,41 @@
   - name: account_no
     type: field_filter
     model: demo_cash
-    explore: v_cash_proof
-    field: v_cash_proof.account_no
+    explore: v_cash_proof_ca
+    field: v_cash_proof_ca.account_no
     default_value: "10928771"
 
-  elements:
-  - name: lbl_ours
-    left: 4
+  - name: cash_proof
+    title: Cash Proof
+    type: table
+    left: 0
     top: 0
-    height: 1
-    width: 4
-    type: single_value
+    height: 4
+    width: 12
     model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.lbl_ours]
-    show_single_value_title: false
+    explore: v_cash_proof_ca
+    dimensions: [v_cash_proof_ca.sortorder, v_cash_proof_ca.label, v_cash_proof_ca.ours,
+      v_cash_proof_ca.ours_count, v_cash_proof_ca.theirs, v_cash_proof_ca.theirs_count,
+      v_cash_proof_ca.net]
     listen:
-      account_no: v_cash_proof.account_no
-
-  - name: lbl_bank
-    left: 8
-    top: 0
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.lbl_bank]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: lbl_net
-    left: 12
-    top: 0
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.lbl_net]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: lbl_previous_close_date
-    left: 0
-    top: 1
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.lbl_previous_close_date]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: ldgr_previous_close_bal_date
-    left: 4
-    top: 1
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.ldgr_previous_close_bal_date_date]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: stmt_previous_close_bal_date
-    left: 8
-    top: 1
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.stmt_previous_close_bal_date_date]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: lbl_previous_close_balance
-    left: 0
-    top: 2
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.lbl_previous_close_balance]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: ldgr_previous_close_bal
-    left: 4
-    top: 2
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.ldgr_previous_close_bal]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: stmt_previous_close_bal
-    left: 8
-    top: 2
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.stmt_previous_close_bal]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: lbl_open_balance
-    left: 0
-    top: 3
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.lbl_open_balance]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: ldgr_current_open_bal
-    left: 4
-    top: 3
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.ldgr_current_open_bal]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: stmt_current_open_bal
-    left: 8
-    top: 3
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.stmt_current_open_bal]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: lbl_open_date
-    left: 0
-    top: 4
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.lbl_open_date]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: ldgr_current_open_bal_date
-    left: 4
-    top: 4
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.ldgr_current_open_bal_date_date]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
-
-  - name: stmt_current_open_bal_date
-    left: 8
-    top: 4
-    height: 1
-    width: 4
-    type: single_value
-    model: demo_cash
-    explore: v_cash_proof
-    dimensions: [v_cash_proof.stmt_current_open_bal_date_date]
-    show_single_value_title: false
-    listen:
-      account_no: v_cash_proof.account_no
+      account_no: v_cash_proof_ca.account_no
+    sorts: [v_cash_proof_ca.sortorder]
+    limit: '500'
+    column_limit: '50'
+    query_timezone: America/Los_Angeles
+    show_view_names: false
+    show_row_numbers: false
+    truncate_column_names: false
+    hide_totals: false
+    hide_row_totals: false
+    table_theme: transparent
+    limit_displayed_rows: false
+    enable_conditional_formatting: false
+    conditional_formatting_ignored_fields: []
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    hidden_fields: [v_cash_proof_ca.sortorder]
+    series_labels:
+      v_cash_proof_ca.label: Description
+      v_cash_proof_ca.ours_count: Count
+      v_cash_proof_ca.theirs_count: Count
