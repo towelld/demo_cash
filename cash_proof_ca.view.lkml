@@ -32,7 +32,7 @@ view: cash_proof_ca {
                 <p align="right"><img src={{rendered_value}}/></p>
           {% else %}
                 <p align="right">{{ rendered_value }}</p>
-          } ;;
+          {% endif %} ;;
   }
 
   dimension: ours {
