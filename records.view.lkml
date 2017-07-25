@@ -22,6 +22,17 @@ view: records {
     sql: ${TABLE}.Amount ;;
   }
 
+  dimension: amount_signed {
+    type: number
+    sql:   case ${TABLE}.System when 'bank' then case ${TABLE}.Sign when 'C' then ${TABLE}.Amount
+            else -${TABLE}.Amount
+            end
+            when 'our' then case ${TABLE}.Sign when 'C' then ${TABLE}.Amount
+            else -${TABLE}.Amount
+            end
+            end ;;
+  }
+
   dimension: amount_allocated {
     type: number
     sql: ${TABLE}.Amount_Allocated ;;
@@ -281,6 +292,15 @@ view: records {
     type: sum
     sql: ${original_amount};;
     drill_fields: [cash_record*]
+  }
+  measure: sum_amount_signed {
+    type: sum
+    sql: ${amount_signed};;
+    value_format_name: decimal_2
+    drill_fields: [cash_record*]
+    html: {% if records.sum_amount_signed._value < 0 %}
+                <font color="#df5555">{{ rendered_value }}</font>
+          {% endif %} ;;
   }
   measure: average_amount {
     type: average

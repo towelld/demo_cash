@@ -249,7 +249,7 @@
         records.our_reference, records.sign, records.post_date_date, records.value_date,
         records.reference1, records.reference2, records.reference3, records.transaction_code,
         records.open_date]
-      measures: [records.sum_amount]
+      measures: [records.sum_amount_signed]
       filters:
         records.match_status: Unmatched
       listen:
@@ -279,4 +279,4 @@
         records.reference3: Reference 3
         records.transaction_code: Trans Code
         records.open_date: Statement
-        records.sum_amount: Amount
+        records.sum_amount_signed: Amount
