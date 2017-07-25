@@ -24,7 +24,8 @@ view: cash_proof_ca {
 
   dimension: net_check {
     type: string
-    sql: ${TABLE}.net ;;
+    sql: ${TABLE}.net_check ;;
+    sql: case when ${TABLE}.net_check = 'TRUE' then 'http://localhost:9999/images/clareti/icon_cross.png' when 'FALSE' then 'http://localhost:9999/images/clareti/icon_tick.png' else ${TABLE}.net_check end ;;
     html: <p align="right">{{ rendered_value }}</p> ;;
   }
 
