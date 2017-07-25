@@ -82,6 +82,8 @@ view: v_cash_proof_ageing_ca {
     value_format_name: decimal_2
     html: {% if v_cash_proof_ageing_ca.sum_net_balance._value < 0 %}
                 <font color="#df5555">{{ rendered_value }}</font>
+          {% else %}
+                <font color="#000000">{{ rendered_value }}</font>
           {% endif %} ;;
     drill_fields: []
   }
