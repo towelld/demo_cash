@@ -55,3 +55,4 @@
         cash_proof_ca.label: Description
         cash_proof_ca.ours_count: Count
         cash_proof_ca.theirs_count: Count
+        cash_proof_ca.net_check: Check
