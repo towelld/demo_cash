@@ -17,7 +17,7 @@ view: v_cash_proof_ageing_ca {
   }
   dimension: net_balance {
     type: number
-    sql: case when ${TABLE}.system = 'our' then ${TABLE}.the_balance else -1.0*${TABLE}.the_balance end ;;
+    sql: case when ${TABLE}.system = 'bank' then ${TABLE}.the_balance else -1.0*${TABLE}.the_balance end ;;
   }
 
   dimension: the_count {
@@ -31,7 +31,7 @@ view: v_cash_proof_ageing_ca {
   }
   dimension: net_payment {
     type: number
-    sql: case when ${TABLE}.system = 'our' then ${TABLE}.the_payment else -1.0*${TABLE}.the_payment end ;;
+    sql: case when ${TABLE}.system = 'bank' then ${TABLE}.the_payment else -1.0*${TABLE}.the_payment end ;;
   }
 
   dimension: the_receipt {
@@ -40,7 +40,7 @@ view: v_cash_proof_ageing_ca {
   }
   dimension: net_receipt {
     type: number
-    sql: case when ${TABLE}.system = 'our' then ${TABLE}.the_receipt else -1.0*${TABLE}.the_receipt end ;;
+    sql: case when ${TABLE}.system = 'bank' then ${TABLE}.the_receipt else -1.0*${TABLE}.the_receipt end ;;
   }
 
   dimension: system {

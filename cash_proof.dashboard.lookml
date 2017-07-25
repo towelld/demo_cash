@@ -188,7 +188,7 @@
       width: 10
       model: demo_cash
       explore: v_cash_proof_ageing_ca
-      dimensions: []
+      dimensions: [v_cash_proof_ageing_ca.account_no]
       measures: [v_cash_proof_ageing_ca.sum_count, v_cash_proof_ageing_ca.sum_net_payment, v_cash_proof_ageing_ca.sum_net_receipt, v_cash_proof_ageing_ca.sum_net_balance]
       listen:
         account_no: v_cash_proof_ageing_ca.account_no
