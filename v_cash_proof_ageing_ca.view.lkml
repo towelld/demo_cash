@@ -15,6 +15,10 @@ view: v_cash_proof_ageing_ca {
     type: number
     sql: ${TABLE}.the_balance ;;
   }
+  dimension: net_balance {
+    type: number
+    sql: case when ${TABLE}.system = 'our' then ${TABLE}.the_balance else -1.0*${TABLE}.the_balance end ;;
+  }
 
   dimension: the_count {
     type: number
@@ -25,10 +29,18 @@ view: v_cash_proof_ageing_ca {
     type: number
     sql: ${TABLE}.the_payment ;;
   }
+  dimension: net_payment {
+    type: number
+    sql: case when ${TABLE}.system = 'our' then ${TABLE}.the_payment else -1.0*${TABLE}.the_payment end ;;
+  }
 
   dimension: the_receipt {
     type: number
     sql: ${TABLE}.the_receipt ;;
+  }
+  dimension: net_receipt {
+    type: number
+    sql: case when ${TABLE}.system = 'our' then ${TABLE}.the_receipt else -1.0*${TABLE}.the_receipt end ;;
   }
 
   dimension: system {
@@ -61,6 +73,24 @@ view: v_cash_proof_ageing_ca {
   measure: sum_receipt {
     type: sum
     sql: ${the_receipt} ;;
+    value_format_name: decimal_2
+    drill_fields: []
+  }
+  measure: sum_net_balance {
+    type: sum
+    sql: ${net_balance} ;;
+    value_format_name: decimal_2
+    drill_fields: []
+  }
+  measure: sum_net_payment {
+    type: sum
+    sql: ${net_payment} ;;
+    value_format_name: decimal_2
+    drill_fields: []
+  }
+  measure: sum_net_receipt {
+    type: sum
+    sql: ${net_receipt} ;;
     value_format_name: decimal_2
     drill_fields: []
   }
