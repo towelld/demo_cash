@@ -25,8 +25,14 @@ view: cash_proof_ca {
   dimension: net_check {
     type: string
     sql: ${TABLE}.net_check ;;
-    sql: case ${TABLE}.net_check when 'TRUE' then 'http://localhost:9999/images/clareti/icon_cross.png' when 'FALSE' then 'http://localhost:9999/images/clareti/icon_tick.png' else ${TABLE}.net_check end ;;
-    html: <p align="right">{{ rendered_value }}</p> ;;
+    sql: case ${TABLE}.net_check when 'TRUE' then 'http://localhost:9999/images/clareti/icon_tick.png' when 'FALSE' then 'http://localhost:9999/images/clareti/icon_cross.png' else ${TABLE}.net_check end ;;
+    html: {% if cash_proof_ca.net_check._value == 'TRUE' %}
+                <p align="right"><img src={{rendered_value}}/></p>
+          {% elsif cash_proof_ca.net_check._value == 'FALSE' %}
+                <p align="right"><img src={{rendered_value}}/></p>
+          {% else %}
+                <p align="right">{{ rendered_value }}</p>
+          } ;;
   }
 
   dimension: ours {
