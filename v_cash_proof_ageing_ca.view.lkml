@@ -80,6 +80,9 @@ view: v_cash_proof_ageing_ca {
     type: sum
     sql: ${net_balance} ;;
     value_format_name: decimal_2
+    html: {% if cash_proof_ca.sum_net_balance._value < 0 %}
+                <font color="#df5555">{{ rendered_value }}</font>
+          {% endif %} ;;
     drill_fields: []
   }
   measure: sum_net_payment {
