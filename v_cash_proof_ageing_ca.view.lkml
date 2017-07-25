@@ -6,6 +6,11 @@ view: v_cash_proof_ageing_ca {
     sql: ${TABLE}.AccountNo ;;
   }
 
+  dimension: the_sort {
+    type: number
+    sql: ${TABLE}.the_sort ;;
+  }
+
   dimension: the_balance {
     type: number
     sql: ${TABLE}.the_balance ;;
