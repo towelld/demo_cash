@@ -25,7 +25,6 @@ view: cash_proof_ca {
   dimension: ours {
     type: string
     sql: ${TABLE}.ours ;;
-    html: <p align="right">{{ rendered_value }}</p> ;;
     html: {% if (cash_proof_ca.label._value == "Open Balance" and cash_proof_ca.ours._value == cash_proof_ca.theirs._value) %}
                  <p align="right"><font color="#92c26e">{{ rendered_value }}</font></p>
           {% elseif (cash_proof_ca.label._value == "Open Balance" and cash_proof_ca.ours._value != cash_proof_ca.theirs._value) %}
