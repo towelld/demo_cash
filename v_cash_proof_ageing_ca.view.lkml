@@ -6,24 +6,24 @@ view: v_cash_proof_ageing_ca {
     sql: ${TABLE}.AccountNo ;;
   }
 
-  dimension: our_balance {
+  dimension: the_balance {
     type: number
-    sql: ${TABLE}.our_balance ;;
+    sql: ${TABLE}.the_balance ;;
   }
 
-  dimension: our_count {
+  dimension: the_count {
     type: number
-    sql: ${TABLE}.our_count ;;
+    sql: ${TABLE}.the_count ;;
   }
 
-  dimension: our_payment {
+  dimension: the_payment {
     type: number
-    sql: ${TABLE}.our_payment ;;
+    sql: ${TABLE}.the_payment ;;
   }
 
-  dimension: our_receipt {
+  dimension: the_receipt {
     type: number
-    sql: ${TABLE}.our_receipt ;;
+    sql: ${TABLE}.the_receipt ;;
   }
 
   dimension: system {
