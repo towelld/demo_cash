@@ -52,7 +52,8 @@
       conditional_formatting_include_nulls: false
       hidden_fields: [cash_proof_ca.sortorder]
       series_labels:
-        cash_proof_ca.label: Description
+        cash_proof_ca.label: " "
+        cash_proof_ca.theirs: "Bank"
         cash_proof_ca.ours_count: " "
         cash_proof_ca.theirs_count: " "
         cash_proof_ca.net_check: " "
