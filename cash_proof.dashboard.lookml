@@ -55,7 +55,7 @@
         cash_proof_ca.label: Description
         cash_proof_ca.ours_count: " "
         cash_proof_ca.theirs_count: " "
-        cash_proof_ca.net_check: Check
+        cash_proof_ca.net_check: " "
 
     - name: aged_analysis_our
       title: Aged Analysis - Ours
