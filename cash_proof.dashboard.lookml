@@ -26,7 +26,7 @@
       type: table
       left: 0
       top: 0
-      height: 8
+      height: 9
       width: 12
       model: demo_cash
       explore: cash_proof_ca
@@ -240,8 +240,8 @@
       title: Unmatched Records
       type: table
       left: 0
-      top: 8
-      height: 6
+      top: 9
+      height: 7
       width: 24
       model: demo_cash
       explore: records
