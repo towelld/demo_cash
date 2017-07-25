@@ -26,9 +26,9 @@ view: cash_proof_ca {
     type: string
     sql: ${TABLE}.net_check ;;
     html: {% if cash_proof_ca.net_check._value == "TRUE" %}
-                <p align="right"><img src="http://localhost:9999/images/clareti/icon_tick.png"/></p>
+                <p align="left"><img src="http://localhost:9999/images/clareti/icon_tick.png"/></p>
           {% elsif cash_proof_ca.net_check._value == "FALSE" %}
-                <p align="right"><img src="http://localhost:9999/images/clareti/icon_cross.png"/></p>
+                <p align="left"><img src="http://localhost:9999/images/clareti/icon_cross.png"/></p>
           {% else %}
                 <p align="right">{{ rendered_value }}</p>
           {% endif %} ;;
@@ -43,7 +43,13 @@ view: cash_proof_ca {
   dimension: ours_count {
     type: string
     sql: ${TABLE}.ours_count ;;
-    html: <p align="right">{{ rendered_value }}</p> ;;
+    html: {% if cash_proof_ca.ours_count._value == "TRUE" %}
+                  <p align="left"><img src="http://localhost:9999/images/clareti/icon_tick.png"/></p>
+          {% elsif cash_proof_ca.ours_count._value == "FALSE" %}
+                  <p align="left"><img src="http://localhost:9999/images/clareti/icon_cross.png"/></p>
+          {% else %}
+                  <p align="right">{{ rendered_value }}</p>
+          {% endif %} ;;
   }
 
   dimension: sortorder {
@@ -60,7 +66,13 @@ view: cash_proof_ca {
   dimension: theirs_count {
     type: string
     sql: ${TABLE}.theirs_count ;;
-    html: <p align="right">{{ rendered_value }}</p> ;;
+    html: {% if cash_proof_ca.theirs_count._value == "TRUE" %}
+                <p align="left"><img src="http://localhost:9999/images/clareti/icon_tick.png"/></p>
+          {% elsif cash_proof_ca.theirs_count._value == "FALSE" %}
+                <p align="left"><img src="http://localhost:9999/images/clareti/icon_cross.png"/></p>
+          {% else %}
+                <p align="right">{{ rendered_value }}</p>
+          {% endif %} ;;
   }
 
   measure: count {
