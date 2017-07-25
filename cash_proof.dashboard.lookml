@@ -194,7 +194,7 @@
         account_no: v_cash_proof_ageing_ca.account_no
       limit: '500'
       column_limit: '50'
-      total: true
+      total: false
       query_timezone: America/Los_Angeles
       show_view_names: false
       show_row_numbers: false
