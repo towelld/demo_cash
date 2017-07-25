@@ -233,3 +233,51 @@
         v_cash_proof_ageing_ca.sum_net_payment: Payments
         v_cash_proof_ageing_ca.sum_net_receipt: Receipts
         v_cash_proof_ageing_ca.sum_net_balance: Net
+
+
+
+    - name: unmatched_records
+      title: Unmatched Records
+      type: table
+      left: 0
+      top: 12
+      height: 6
+      width: 24
+      model: demo_cash
+      explore: records
+      dimensions: [records.reason, records.system, records.account_no, records.original_amount_currency,
+        records.our_reference, records.sign, records.post_date_date, records.value_date,
+        records.reference1, records.reference2, records.reference3, records.transaction_code,
+        records.open_date]
+      measures: [records.sum_amount]
+      filters:
+        records.match_status: Unmatched
+      listen:
+        account_no: records.account_no
+      sorts: [records.post_date_date desc]
+      limit: '500'
+      column_limit: '50'
+      total: true
+      query_timezone: America/Los_Angeles
+      show_view_names: false
+      show_row_numbers: false
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: transparent
+      limit_displayed_rows: false
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      series_labels:
+        records.original_amount_currency: Ccy
+        records.our_reference: Reference
+        records.post_date_date: Post Date
+        records.reference1: Reference 1
+        records.reference2: Reference 2
+        records.reference3: Reference 3
+        records.transaction_code: Trans Code
+        records.open_date: Statement
+        records.sum_amount: Amount
+
