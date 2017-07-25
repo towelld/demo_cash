@@ -71,7 +71,11 @@ view: cash_proof_ca {
   dimension: theirs {
     type: string
     sql: ${TABLE}.theirs ;;
-    html: <p align="right">{{ rendered_value }}</p> ;;
+    html: {% if cash_proof_ca.label._value == " " and cash_proof_ca.theirs._value != " " %}
+                <p align="right" style="border-top:solid;border-width:1px">{{ rendered_value }}</p>
+          {% else %}
+                <p align="right">{{ rendered_value }}</p>
+          {% endif %} ;;
   }
 
   dimension: theirs_count {
