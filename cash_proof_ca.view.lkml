@@ -17,7 +17,7 @@ view: cash_proof_ca {
     html: {% if cash_proof_ca.label._value == "Credits" %}
                 <p align="center">{{ rendered_value }}</p>
           {% elsif cash_proof_ca.label._value == "Debits" %}
-                <p align="center" style="border-bottom:solid">{{ rendered_value }}</p>
+                <p align="center">{{ rendered_value }}</p>
           {% else %}
                 <p align="left">{{ rendered_value }}</p>
           {% endif %} ;;
@@ -44,7 +44,11 @@ view: cash_proof_ca {
   dimension: ours {
     type: string
     sql: ${TABLE}.ours ;;
-    html: <p align="right">{{ rendered_value }}</p> ;;
+    html: {% if cash_proof_ca.label._value == "Debits" %}
+                <p align="right" style="border-bottom:solid">{{ rendered_value }}</p>
+          {% else %}
+                <p align="right">{{ rendered_value }}</p>
+          {% endif %} ;;
   }
 
   dimension: ours_count {
