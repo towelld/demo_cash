@@ -32,7 +32,7 @@
       explore: cash_proof_ca
       dimensions: [cash_proof_ca.sortorder, cash_proof_ca.label, cash_proof_ca.ours,
         cash_proof_ca.ours_count, cash_proof_ca.theirs, cash_proof_ca.theirs_count,
-        cash_proof_ca.net]
+        cash_proof_ca.net, cash_proof_ca.net_check]
       listen:
         account_no: cash_proof_ca.account_no
       sorts: [cash_proof_ca.sortorder]
