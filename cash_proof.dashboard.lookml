@@ -26,7 +26,7 @@
       type: table
       left: 0
       top: 0
-      height: 12
+      height: 8
       width: 12
       model: demo_cash
       explore: cash_proof_ca
@@ -240,7 +240,7 @@
       title: Unmatched Records
       type: table
       left: 0
-      top: 12
+      top: 8
       height: 6
       width: 24
       model: demo_cash
@@ -280,4 +280,3 @@
         records.transaction_code: Trans Code
         records.open_date: Statement
         records.sum_amount: Amount
-
