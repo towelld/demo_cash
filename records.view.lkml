@@ -300,6 +300,8 @@ view: records {
     drill_fields: [cash_record*]
     html: {% if records.sum_amount_signed._value < 0 %}
                 <font color="#df5555">{{ rendered_value }}</font>
+          {% else %}
+                <font color="#000000">{{ rendered_value }}</font>
           {% endif %} ;;
   }
   measure: average_amount {
