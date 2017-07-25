@@ -41,8 +41,24 @@ view: v_cash_proof_ageing_ca {
     sql: ${TABLE}.the_age ;;
   }
 
-  measure: count {
-    type: count
+  measure: sum_count {
+    type: sum
+    sql: ${the_count} ;;
+    drill_fields: []
+  }
+  measure: sum_balance {
+    type: sum
+    sql: ${the_balance} ;;
+    drill_fields: []
+  }
+  measure: sum_payment {
+    type: sum
+    sql: ${the_payment} ;;
+    drill_fields: []
+  }
+  measure: sum_receipt {
+    type: sum
+    sql: ${the_receipt} ;;
     drill_fields: []
   }
 }
