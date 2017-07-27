@@ -16,8 +16,8 @@
   - name: account_no
     type: field_filter
     model: demo_cash
-    explore: v_cash_proof_ca
-    field: v_cash_proof_ca.account_no
+    explore: v_cash_proof_ageing_ca
+    field: v_cash_proof_ageing_ca.account_no
     default_value: "10928771"
 
   elements:
