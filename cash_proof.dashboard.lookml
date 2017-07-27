@@ -37,7 +37,7 @@
       dynamic_fields:
       - table_calculation: calculation_1
         label: Calculation 1
-        expression: 'concat("Account No: ",${records.account_no}," / Currency: ",${records.currency})'
+        expression: 'concat("Account No: ",${records.account_no},"    Currency: ",${records.currency})'
         value_format:
         value_format_name:
       sorts: [records.account_no]
