@@ -32,6 +32,8 @@
       model: demo_cash
       explore: v_cash_proof_ageing_ca
       dimensions: [v_cash_proof_ageing_ca.account_no]
+      listen:
+        account_no: v_cash_proof_ageing_ca.account_no
       dynamic_fields:
       - table_calculation: account_title
         label: Account Title
