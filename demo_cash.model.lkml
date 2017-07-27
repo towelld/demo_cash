@@ -73,6 +73,9 @@ explore: v_bcbs248 {
 explore: cash_proof_ca {
   persist_for: "1 minutes"
 }
+explore: v_cash_proof_ca {
+  persist_for: "1 minutes"
+}
 explore: v_cash_proof_ageing_ca {
   persist_for: "1 minutes"
 }
