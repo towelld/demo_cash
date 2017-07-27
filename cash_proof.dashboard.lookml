@@ -16,31 +16,27 @@
   - name: account_no
     type: field_filter
     model: demo_cash
-    explore: v_cash_proof_ageing_ca
-    field: v_cash_proof_ageing_ca.account_no
+    explore: records
+    field: records.account_no
     default_value: "10928771"
 
   elements:
 
-    - name: cash_account_title
+    - name: cash_proof_title
       title: Untitled Visualization
       type: single_value
-      left: 0
-      top: 0
-      height: 1
-      width: 24
       model: demo_cash
-      explore: v_cash_proof_ageing_ca
-      dimensions: [v_cash_proof_ageing_ca.account_no]
+      explore: records
+      dimensions: [records.account_no, records.currency]
       listen:
-        account_no: v_cash_proof_ageing_ca.account_no
+        account_no: records.account_no
       dynamic_fields:
-      - table_calculation: account_title
-        label: Account Title
-        expression: 'concat("Account No: ",${v_cash_proof_ageing_ca.account_no})'
+      - table_calculation: calculation_1
+        label: Calculation 1
+        expression: 'concat("Account No: ",${records.account_no}," / Currency: ",${records.currency})'
         value_format:
         value_format_name:
-      sorts: [v_cash_proof_ageing_ca.account_no]
+      sorts: [records.account_no]
       limit: '500'
       column_limit: '50'
       query_timezone: America/Los_Angeles
@@ -51,30 +47,21 @@
       comparison_type: value
       comparison_reverse_colors: false
       show_comparison_label: true
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
       show_view_names: true
+      show_row_numbers: true
+      truncate_column_names: false
+      hide_totals: false
+      hide_row_totals: false
+      table_theme: editable
       limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: "#808080"
+      enable_conditional_formatting: false
+      conditional_formatting_ignored_fields: []
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      hidden_fields: [records.account_no, records.currency]
       series_types: {}
-      hidden_fields: [v_cash_proof_ageing_ca.account_no]
+
+
 
     - name: cash_proof
       title: Position
