@@ -14,9 +14,9 @@ view: v_cash_proof_ca {
   dimension: label {
     type: string
     sql: ${TABLE}.label ;;
-    html: {% if cash_proof_ca.label._value == "Credits" %}
+    html: {% if v_cash_proof_ca.label._value == "Credits" %}
     <p align="center">{{ rendered_value }}</p>
-    {% elsif cash_proof_ca.label._value == "Debits" %}
+    {% elsif v_cash_proof_ca.label._value == "Debits" %}
     <p align="center">{{ rendered_value }}</p>
     {% else %}
     <p align="left">{{ rendered_value }}</p>
@@ -32,9 +32,9 @@ view: v_cash_proof_ca {
   dimension: net_check {
     type: string
     sql: ${TABLE}.net_check ;;
-    html: {% if cash_proof_ca.net_check._value == "TRUE" %}
+    html: {% if v_cash_proof_ca.net_check._value == "TRUE" %}
     <p align="left"><img src="http://localhost:9999/images/clareti/icon_tick.png"/></p>
-    {% elsif cash_proof_ca.net_check._value == "FALSE" %}
+    {% elsif v_cash_proof_ca.net_check._value == "FALSE" %}
     <p align="left"><img src="http://localhost:9999/images/clareti/icon_cross.png"/></p>
     {% else %}
     <p align="right">{{ rendered_value }}</p>
@@ -44,7 +44,7 @@ view: v_cash_proof_ca {
   dimension: ours {
     type: string
     sql: ${TABLE}.ours ;;
-    html: {% if cash_proof_ca.label._value == " " and cash_proof_ca.ours._value != " " %}
+    html: {% if v_cash_proof_ca.label._value == " " and v_cash_proof_ca.ours._value != " " %}
     <p align="right" style="border-top:solid;border-width:1px">{{ rendered_value }}</p>
     {% else %}
     <p align="right">{{ rendered_value }}</p>
@@ -54,9 +54,9 @@ view: v_cash_proof_ca {
   dimension: ours_count {
     type: string
     sql: ${TABLE}.ours_count ;;
-    html: {% if cash_proof_ca.ours_count._value == "TRUE" %}
+    html: {% if v_cash_proof_ca.ours_count._value == "TRUE" %}
     <p align="left"><img src="http://localhost:9999/images/clareti/icon_tick.png"/></p>
-    {% elsif cash_proof_ca.ours_count._value == "FALSE" %}
+    {% elsif v_cash_proof_ca.ours_count._value == "FALSE" %}
     <p align="left"><img src="http://localhost:9999/images/clareti/icon_cross.png"/></p>
     {% else %}
     <p align="right">{{ rendered_value }}</p>
@@ -71,7 +71,7 @@ view: v_cash_proof_ca {
   dimension: theirs {
     type: string
     sql: ${TABLE}.theirs ;;
-    html: {% if cash_proof_ca.label._value == " " and cash_proof_ca.theirs._value != " " %}
+    html: {% if v_cash_proof_ca.label._value == " " and v_cash_proof_ca.theirs._value != " " %}
     <p align="right" style="border-top:solid;border-width:1px">{{ rendered_value }}</p>
     {% else %}
     <p align="right">{{ rendered_value }}</p>
@@ -81,9 +81,9 @@ view: v_cash_proof_ca {
   dimension: theirs_count {
     type: string
     sql: ${TABLE}.theirs_count ;;
-    html: {% if cash_proof_ca.theirs_count._value == "TRUE" %}
+    html: {% if v_cash_proof_ca.theirs_count._value == "TRUE" %}
     <p align="left"><img src="http://localhost:9999/images/clareti/icon_tick.png"/></p>
-    {% elsif cash_proof_ca.theirs_count._value == "FALSE" %}
+    {% elsif v_cash_proof_ca.theirs_count._value == "FALSE" %}
     <p align="left"><img src="http://localhost:9999/images/clareti/icon_cross.png"/></p>
     {% else %}
     <p align="right">{{ rendered_value }}</p>
