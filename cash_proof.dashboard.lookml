@@ -25,6 +25,10 @@
     - name: cash_proof_title
       title: Untitled Visualization
       type: single_value
+      left: 0
+      top: 0
+      height: 1
+      width: 24
       model: demo_cash
       explore: records
       dimensions: [records.account_no, records.currency]
