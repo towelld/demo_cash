@@ -311,6 +311,7 @@ view: records {
   measure: sum_amount {
     type: sum
     sql: ${original_amount};;
+    value_format: "#,##0.00"
     drill_fields: [cash_record*]
   }
   measure: sum_amount_signed {
@@ -332,6 +333,7 @@ view: records {
   measure: sum_amount_usd {
     type: sum
     sql: ${amount_usd};;
+    value_format: "#,##0.00"
     drill_fields: [cash_record*]
   }
   measure: count_matched {
