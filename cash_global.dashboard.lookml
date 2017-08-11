@@ -25,7 +25,7 @@
       left: 0
       top: 0
       height: 6
-      width: 18
+      width: 12
       model: demo_cash
       explore: records
       dimensions: [records.country]
@@ -66,12 +66,12 @@
       empty_color: "#CCCCCC"
 
     - name: cash_global_pie
-      title:
+      title: Global Percentage (USD)
       type: looker_pie
       left: 18
       top: 0
       height: 6
-      width: 6
+      width: 12
       model: demo_cash
       explore: records
       dimensions: [records.country_name]
