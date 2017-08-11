@@ -68,7 +68,7 @@
     - name: cash_global_pie
       title: Global Percentage (USD)
       type: looker_pie
-      left: 18
+      left: 12
       top: 0
       height: 6
       width: 12
