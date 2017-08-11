@@ -281,31 +281,21 @@ view: records {
 
   dimension: country {
     type: string
-    sql: case substring(${TABLE}.reference2,2,1) when '0' then 'AUS'
-                                                 when '1' then 'CAN'
-                                                 when '2' then 'CHE'
-                                                 when '3' then 'FRA'
-                                                 when '4' then 'GBR'
-                                                 when '5' then 'CHN'
-                                                 when '6' then 'ITA'
-                                                 when '7' then 'NZL'
-                                                 when '8' then 'ESP'
-                                                 when '9' then 'USA'
-                                              end ;;
+    sql: ${TABLE}.reference3 ;;
   }
   dimension: country_name {
     type: string
-    sql: case substring(${TABLE}.reference2,2,1) when '0' then 'Australia'
-                                                 when '1' then 'Canada'
-                                                 when '2' then 'Switzerland'
-                                                 when '3' then 'France'
-                                                 when '4' then 'United Kingdom'
-                                                 when '5' then 'China'
-                                                 when '6' then 'Italy'
-                                                 when '7' then 'New Zealand'
-                                                 when '8' then 'Spain'
-                                                 when '9' then 'United States of America'
-                                              end ;;
+    sql: case ${TABLE}.reference3 when 'AUS' then 'Australia'
+                                  when 'CAN' then 'Canada'
+                                  when 'CHE' then 'Switzerland'
+                                  when 'FRA' then 'France'
+                                  when 'GBR' then 'United Kingdom'
+                                  when 'CHN' then 'China'
+                                  when 'ITA' then 'Italy'
+                                  when 'NZL' then 'New Zealand'
+                                  when 'ESP' then 'Spain'
+                                  when 'USA' then 'United States of America'
+         end ;;
   }
 
 

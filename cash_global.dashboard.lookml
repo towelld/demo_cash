@@ -20,7 +20,7 @@
 
   elements:
     - name: cash_global_map
-      title: Global Map (USD)
+      title: Global Cash (USD)
       type: looker_geo_choropleth
       left: 0
       top: 0
