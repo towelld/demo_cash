@@ -121,7 +121,7 @@
       measures: [records.sum_amount_usd]
       listen:
         currency: records.currency
-      sorts: [records.sum_amount_usd desc]
+      sorts: [records.country_name desc]
       limit: '500'
       column_limit: '50'
       total: true
