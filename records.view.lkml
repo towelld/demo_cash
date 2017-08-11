@@ -279,6 +279,36 @@ view: records {
     sql: ${TABLE}.VendorNumber ;;
   }
 
+  dimension: country {
+    type: string
+    sql: case substring(${TABLE}.reference2,2,1) when '0' then 'AUS'
+                                                 when '1' then 'CAN'
+                                                 when '2' then 'CHE'
+                                                 when '3' then 'FRA'
+                                                 when '4' then 'GBR'
+                                                 when '5' then 'CHN'
+                                                 when '6' then 'ITA'
+                                                 when '7' then 'NZL'
+                                                 when '8' then 'ESP'
+                                                 when '9' then 'USA'
+                                              end ;;
+  }
+  dimension: country_name {
+    type: string
+    sql: case substring(${TABLE}.reference2,2,1) when '0' then 'Australia'
+                                                 when '1' then 'Canada'
+                                                 when '2' then 'Switzerland'
+                                                 when '3' then 'France'
+                                                 when '4' then 'United Kingdom'
+                                                 when '5' then 'China'
+                                                 when '6' then 'Italy'
+                                                 when '7' then 'New Zealand'
+                                                 when '8' then 'Spain'
+                                                 when '9' then 'United States of America'
+                                              end ;;
+  }
+
+
   measure: count {
     type: count
     drill_fields: [cash_record*]
