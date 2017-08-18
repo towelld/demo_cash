@@ -34,14 +34,14 @@
     top: 0
     height: 4
     width: 24
-    type: looker_line
+    type: looker_area
     model: demo_cash
     explore: v_bcbs248
     dimensions: [v_bcbs248.post_date_time]
     measures: [v_bcbs248.sum_net]
-    listen:
-      currency: v_bcbs248.currency
-      post_date: v_bcbs248.post_date_date
+    filters:
+      v_bcbs248.currency: USD
+      v_bcbs248.post_date_date: 2016/01/28
     sorts: [v_bcbs248.post_date_time]
     limit: '500'
     column_limit: '50'
@@ -73,13 +73,15 @@
     x_axis_datetime_label: "%H:%M"
     y_axis_unpin: false
     series_colors:
-      v_bcbs248.sum_net: "#646569"
+      v_bcbs248.sum_net: "#5e8ab4"
       __FILE: demo_cash/cash_intraday.dashboard.lookml
-      __LINE_NUM: 75
+      __LINE_NUM: 76
     x_axis_datetime_tick_count:
     reference_lines: [{reference_type: line, line_value: '0', range_start: max, range_end: min,
         margin_top: deviation, margin_value: mean, margin_bottom: deviation, label_position: right,
-        color: "#5e8aa9"}]
+        color: "#5e8aa9", __FILE: demo_cash/cash_intraday.dashboard.lookml, __LINE_NUM: 80}]
+
+
 
   - name: transaction_history
     title: Transaction History
