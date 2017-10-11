@@ -51,7 +51,9 @@ explore: records {
   persist_for: "5 minutes"
 }
 
-explore: user_audit {}
+explore: user_audit {
+  persist_for: "5 minutes"
+}
 
 explore: v_cash_ageing {}
 
