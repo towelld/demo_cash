@@ -64,6 +64,10 @@
 
     - name: files_loaded_detail
       title: Detail
+      left: 0
+      top: 4
+      height: 4
+      width: 6
       type: table
       model: demo_cash
       explore: load_jobs
