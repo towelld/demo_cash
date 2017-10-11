@@ -15,6 +15,7 @@ explore: bcbsliquidity {}
 explore: exception_record_link {}
 
 explore: exceptions {
+  persist_for: "5 minutes"
   join: exception_record_link {
     type: inner
     sql_on: ${exception_record_link.exception_pk} = ${exceptions.pk} ;;
