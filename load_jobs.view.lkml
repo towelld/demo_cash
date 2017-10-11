@@ -86,6 +86,7 @@ view: load_jobs {
   }
   measure: sum_duration {
     type: sum
+    value_format: "#,##0.00"
     sql:${TABLE}.LoadDuration/1000.0 ;;
   }
   measure: sum_number_of_loaded_records {
