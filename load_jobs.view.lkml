@@ -88,4 +88,8 @@ view: load_jobs {
     type: sum
     sql:${TABLE}.LoadDuration/1000.0 ;;
   }
+  measure: sum_number_of_loaded_records {
+    type: sum
+    sql:${TABLE}.NumberOfLoadedRecords ;;
+  }
 }
