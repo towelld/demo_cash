@@ -539,6 +539,7 @@
       sorts: [user_audit.action]
       limit: '500'
       column_limit: '50'
+      total: true
       query_timezone: Europe/London
       show_view_names: false
       show_row_numbers: false
@@ -635,6 +636,7 @@
       sorts: [records.assigned_to]
       limit: '500'
       column_limit: '50'
+      total: true
       query_timezone: Europe/London
       show_view_names: true
       show_row_numbers: false
@@ -728,6 +730,7 @@
       sorts: [exceptions.name]
       limit: '500'
       column_limit: '50'
+      total: true
       query_timezone: Europe/London
       show_view_names: false
       show_row_numbers: false
