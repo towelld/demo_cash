@@ -42,9 +42,13 @@ explore: group_record_link {}
 
 explore: groups {}
 
-explore: load_jobs {}
+explore: load_jobs {
+  persist_for: "5 minutes"
+}
 
-explore: match_jobs {}
+explore: match_jobs {
+  persist_for: "5 minutes"
+}
 
 explore: matches {}
 
