@@ -82,11 +82,12 @@ view: user_audit {
     sql: ${TABLE}.CommentPk ;;
   }
 
-  dimension: date_time_stamp {
-    type: string
+  dimension_group: date_time_stamp {
+    type: time
+    timeframes: [date, week, month, time]
+    convert_tz: no
     sql: ${TABLE}.DateTimeStamp ;;
   }
-
   dimension: link_pk {
     type: string
     sql: ${TABLE}.LinkPk ;;
