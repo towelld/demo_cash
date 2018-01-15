@@ -36,11 +36,15 @@ explore: file_record_link {
   }
 }
 
-explore: files {}
+explore: files {
+  persist_for: "5 minutes"
+}
 
 explore: group_record_link {}
 
-explore: groups {}
+explore: groups {
+  persist_for: "5 minutes"
+}
 
 explore: load_jobs {
   persist_for: "5 minutes"
