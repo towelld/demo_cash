@@ -91,12 +91,22 @@ view: v_cash_proof_ageing_ca {
     type: sum
     sql: ${net_payment} ;;
     value_format_name: decimal_2
+    html: {% if v_cash_proof_ageing_ca.sum_net_payment._value < 0 %}
+              <font color="#df5555">{{ rendered_value }}</font>
+          {% else %}
+              <font color="#000000">{{ rendered_value }}</font>
+          {% endif %} ;;
     drill_fields: []
   }
   measure: sum_net_receipt {
     type: sum
     sql: ${net_receipt} ;;
     value_format_name: decimal_2
+    html: {% if v_cash_proof_ageing_ca.sum_net_receipt._value < 0 %}
+              <font color="#df5555">{{ rendered_value }}</font>
+          {% else %}
+              <font color="#000000">{{ rendered_value }}</font>
+          {% endif %} ;;
     drill_fields: []
   }
 }
