@@ -302,6 +302,10 @@ view: records {
     type: string
     sql: ${currency_rates.exchange_rate};;
   }
+  dimension: amount_in_gbp {
+    type: string
+    sql: ${amount} / ${exchange_rate}  ;;
+  }
 
   measure: count {
     type: count
