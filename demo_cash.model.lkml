@@ -58,6 +58,11 @@ explore: matches {}
 
 explore: records {
   persist_for: "5 minutes"
+  join: currency_rates {
+    type: inner
+    sql_on: ${currency_rates.foreign_currency} = ${records.currency} ;;
+    relationship: many_to_one
+  }
 }
 
 explore: user_audit {
