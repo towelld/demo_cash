@@ -298,6 +298,10 @@ view: records {
          end ;;
   }
 
+  dimension: exchange_rate {
+    type: string
+    sql: ${currency_rates.exchange_rate};;
+  }
 
   measure: count {
     type: count
