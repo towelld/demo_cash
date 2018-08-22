@@ -33,7 +33,7 @@
       fill_fields: [records.post_date_date]
       measures: [records.sum_amount]
       filters:
-        records.open_date: 2016/01/28
+        records.open_date: 2018/05/28
       listen:
         currency: records.currency
       sorts: [records.currency, records.post_date_date desc]
