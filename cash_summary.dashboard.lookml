@@ -79,7 +79,7 @@
       pivots: [v_running_balance.currency]
       measures: [v_running_balance.sum_net]
       filters:
-        v_running_balance.post_date: 28/01/2016
+        v_running_balance.post_date: 28/05/2018
       listen:
         currency: v_running_balance.currency
       sorts: [v_running_balance.currency 0, v_running_balance.time]
