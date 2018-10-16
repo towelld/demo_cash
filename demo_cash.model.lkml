@@ -26,11 +26,6 @@ explore: exceptions {
     sql_on: ${records.pk} = ${exception_record_link.record_pk} ;;
     relationship: one_to_many
   }
-  join: currency_rates {
-    type: inner
-    sql_on: ${currency_rates.foreign_currency} = ${records.currency} ;;
-    relationship: one_to_many
-  }
 }
 
 explore: file_record_link {
@@ -63,11 +58,6 @@ explore: matches {}
 
 explore: records {
   persist_for: "5 minutes"
-  join: currency_rates {
-    type: inner
-    sql_on: ${currency_rates.foreign_currency} = ${records.currency} ;;
-    relationship: many_to_one
-  }
 }
 
 explore: user_audit {
@@ -82,22 +72,12 @@ explore: v_running_balance {
     sql_on: ${v_running_balance.currency} = ${records.currency} and  ${v_running_balance.post_date}= ${records.post_date_date};;
     relationship: many_to_one
   }
-  join: currency_rates {
-    type: inner
-    sql_on: ${currency_rates.foreign_currency} = ${records.currency} ;;
-    relationship: one_to_many
-  }
 }
 explore: v_bcbs248 {
   join: records {
     type: left_outer
     sql_on: ${v_bcbs248.currency} = ${records.currency} and  ${v_bcbs248.post_date_date}= ${records.post_date_date};;
     relationship: many_to_one
-  }
-  join: currency_rates {
-    type: inner
-    sql_on: ${currency_rates.foreign_currency} = ${records.currency} ;;
-    relationship: one_to_many
   }
 }
 
