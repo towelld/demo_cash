@@ -72,7 +72,7 @@
       left: 6
       top: 0
       height: 4
-      width: 16
+      width: 18
       model: demo_cash
       explore: v_running_balance
       dimensions: [v_running_balance.currency, v_running_balance.time]
@@ -128,7 +128,7 @@
       type: looker_line
       left: 0
       top: 4
-      height: 4
+      height: 8
       width: 24
       model: demo_cash
       explore: v_running_balance
