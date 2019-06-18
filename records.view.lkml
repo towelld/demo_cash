@@ -199,7 +199,7 @@ view: records {
     type: time
     timeframes: [date, week, month, time]
     convert_tz: no
-    sql: ${TABLE}.PostDate ;;
+    sql: ${TABLE}.EntryDate ;;
   }
 
   dimension: reason {
