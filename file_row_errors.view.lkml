@@ -1,5 +1,5 @@
 view: file_row_errors {
-  sql_table_name: DemoCashStmt.FileRowErrors ;;
+  sql_table_name: DemoCash.FileRowErrors ;;
 
   dimension: error_code {
     type: number

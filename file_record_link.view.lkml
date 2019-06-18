@@ -1,5 +1,5 @@
 view: file_record_link {
-  sql_table_name: DemoCashStmt.FileRecordLink ;;
+  sql_table_name: DemoCash.FileRecordLink ;;
 
   dimension: file_id {
     type: number

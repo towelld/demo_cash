@@ -1,5 +1,5 @@
 view: v_bcbs248 {
-  sql_table_name: DemoCashStmt.vBCBS248 ;;
+  sql_table_name: DemoCash.vBCBS248 ;;
 
   dimension: currency {
     type: string

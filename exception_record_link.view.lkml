@@ -1,5 +1,5 @@
 view: exception_record_link {
-  sql_table_name: DemoCashStmt.ExceptionRecordLink ;;
+  sql_table_name: DemoCash.ExceptionRecordLink ;;
 
   dimension: exception_pk {
     type: string

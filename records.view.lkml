@@ -1,5 +1,5 @@
 view: records {
-  sql_table_name: DemoCashStmt.Records ;;
+  sql_table_name: DemoCash.Records ;;
 
   dimension: account_no {
     type: string
@@ -199,7 +199,7 @@ view: records {
     type: time
     timeframes: [date, week, month, time]
     convert_tz: no
-    sql: ${TABLE}.EntryDate ;;
+    sql: ${TABLE}.PostDate ;;
   }
 
   dimension: reason {

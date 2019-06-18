@@ -1,5 +1,5 @@
 view: exceptions {
-  sql_table_name: DemoCashStmt.Exceptions ;;
+  sql_table_name: DemoCash.Exceptions ;;
 
   dimension: active_status {
     type: number

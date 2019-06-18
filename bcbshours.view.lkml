@@ -1,5 +1,5 @@
 view: bcbshours {
-  sql_table_name: DemoCashStmt.BCBSHours ;;
+  sql_table_name: DemoCash.BCBSHours ;;
 
   dimension: thehour {
     type: string

@@ -1,5 +1,5 @@
 view: groups {
-  sql_table_name: DemoCashStmt.Groups ;;
+  sql_table_name: DemoCash.Groups ;;
 
   dimension: active_status {
     type: number

@@ -1,5 +1,5 @@
 view: load_jobs {
-  sql_table_name: DemoCashStmt.LoadJobs ;;
+  sql_table_name: DemoCash.LoadJobs ;;
 
   dimension_group: start_date_time_stamp {
     type: time

@@ -1,5 +1,5 @@
 view: user_audit {
-  sql_table_name: DemoCashStmt.UserAudit ;;
+  sql_table_name: DemoCash.UserAudit ;;
 
   dimension: action_approved {
     type: number
