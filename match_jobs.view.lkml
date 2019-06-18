@@ -1,5 +1,5 @@
 view: match_jobs {
-  sql_table_name: DemoCash.MatchJobs ;;
+  sql_table_name: DemoCashStmt.MatchJobs ;;
 
   #dimension: date_time_stamp {
   #  type: string

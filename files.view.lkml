@@ -1,5 +1,5 @@
 view: files {
-  sql_table_name: DemoCash.Files ;;
+  sql_table_name: DemoCashStmt.Files ;;
 
   dimension: id {
     primary_key: yes

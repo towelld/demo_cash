@@ -1,5 +1,5 @@
 view: matches {
-  sql_table_name: DemoCash.Matches ;;
+  sql_table_name: DemoCashStmt.Matches ;;
 
   dimension: finished {
     type: string
