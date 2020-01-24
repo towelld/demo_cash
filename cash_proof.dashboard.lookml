@@ -294,7 +294,7 @@
       explore: records
       dimensions: [records.reason, records.system, records.account_no, records.original_amount_currency,
         records.our_reference, records.sign, records.post_date_date, records.value_date,
-        records.reference1, records.reference2, records.reference3, records.transaction_code,
+        records.reference1, records.reference2, records.reference3, records.transaction_type,
         records.open_date]
       measures: [records.sum_amount_signed]
       filters:

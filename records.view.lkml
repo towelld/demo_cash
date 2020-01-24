@@ -247,14 +247,9 @@ view: records {
     sql: ${TABLE}.Terminal ;;
   }
 
-  dimension: transaction_code {
+  dimension: transaction_type {
     type: string
-    sql: ${TABLE}.TransactionCode ;;
-  }
-
-  dimension: transaction_status {
-    type: number
-    sql: ${TABLE}.TransactionStatus ;;
+    sql: ${TABLE}.TxnType ;;
   }
 
   dimension: ultimate_parent_pk {
