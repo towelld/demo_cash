@@ -265,16 +265,15 @@ view: records {
   }
   dimension: country_name {
     type: string
-    sql: case ${TABLE}.reference3 when 'AUS' then 'Australia'
-                                  when 'CAN' then 'Canada'
-                                  when 'CHE' then 'Switzerland'
-                                  when 'FRA' then 'France'
-                                  when 'GBR' then 'United Kingdom'
-                                  when 'CHN' then 'China'
-                                  when 'ITA' then 'Italy'
-                                  when 'NZL' then 'New Zealand'
-                                  when 'ESP' then 'Spain'
-                                  when 'USA' then 'United States of America'
+    sql: case ${TABLE}.txntype when 'CHRG' then 'Australia'
+                               when 'DIV' then 'Canada'
+                               when 'FDIV' then 'Switzerland'
+                               when 'FINAL' then 'France'
+                               when 'NPCH' then 'United Kingdom'
+                               when 'NSAL' then 'United States of America'
+                               when 'PCH' then 'China'
+                               when 'SAL' then 'Italy'
+                               else 'Spain'
          end ;;
   }
 
