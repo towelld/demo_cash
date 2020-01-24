@@ -20,7 +20,7 @@
 
   elements:
     - name: cash_global_map
-      title: Global Cash (USD)
+      title: Global Cash (GBP)
       type: looker_geo_choropleth
       left: 0
       top: 0
@@ -29,10 +29,10 @@
       model: demo_cash
       explore: records
       dimensions: [records.country]
-      measures: [records.sum_amount_usd]
+      measures: [records.sum_amount_gbp]
       listen:
         currency: records.currency
-      sorts: [records.sum_amount_usd desc]
+      sorts: [records.sum_amount_gbp desc]
       limit: '500'
       column_limit: '50'
       query_timezone: America/Los_Angeles
@@ -66,7 +66,7 @@
       empty_color: "#CCCCCC"
 
     - name: cash_global_pie
-      title: Global Percentage (USD)
+      title: Global Percentage (GBP)
       type: looker_pie
       left: 12
       top: 0
@@ -75,7 +75,7 @@
       model: demo_cash
       explore: records
       dimensions: [records.country_name]
-      measures: [records.sum_amount_usd]
+      measures: [records.sum_amount_gbp]
       listen:
         currency: records.currency
       sorts: [records.country_name asc]
@@ -109,7 +109,7 @@
       series_types: {}
 
     - name: cash_global_bar
-      title: Global Cash (USD)
+      title: Global Cash (GBP)
       type: looker_column
       left: 0
       top: 6
@@ -119,7 +119,7 @@
       explore: records
       dimensions: [records.country_name]
       pivots: [records.country_name]
-      measures: [records.sum_amount_usd]
+      measures: [records.sum_amount_gbp]
       sorts: [records.country_name]
       limit: '500'
       column_limit: '50'
@@ -161,7 +161,7 @@
 
 
     - name: global_cash_table
-      title: Global Cash (USD)
+      title: Global Cash (GBP)
       type: table
       left: 0
       top: 12
@@ -170,7 +170,7 @@
       model: demo_cash
       explore: records
       dimensions: [records.country_name]
-      measures: [records.sum_amount_usd]
+      measures: [records.sum_amount_gbp]
       listen:
         currency: records.currency
       sorts: [records.country_name asc]

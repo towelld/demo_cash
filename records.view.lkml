@@ -58,16 +58,6 @@ view: records {
     sql: ${TABLE}.AmountGBPCurrency ;;
   }
 
-  dimension: amount_usd {
-    type: number
-    sql: ${TABLE}.AmountUSD ;;
-  }
-
-  dimension: amount_usdcurrency {
-    type: string
-    sql: ${TABLE}.AmountUSDCurrency ;;
-  }
-
   dimension: assigned_to {
     type: string
     sql: isnull(substring(${TABLE}.AssignedTo,charindex('.',${TABLE}.AssignedTo)+1,200),'Unassigned');;
@@ -319,9 +309,9 @@ view: records {
     sql: ${original_amount};;
     drill_fields: [cash_record*]
   }
-  measure: sum_amount_usd {
+  measure: sum_amount_gbp {
     type: sum
-    sql: ${amount_usd};;
+    sql: ${amount_gbp};;
     value_format: "#,##0.00"
     drill_fields: [cash_record*]
   }
