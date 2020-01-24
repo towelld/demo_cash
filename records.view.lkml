@@ -177,7 +177,7 @@ view: records {
 
   dimension: our_reference {
     type: string
-    sql: ${TABLE}.TransactionReference ;;
+    sql: ${TABLE}.TransactionRef ;;
   }
 
   dimension: pk {
