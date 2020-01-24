@@ -32,6 +32,7 @@
       measures: [records.sum_amount_gbp]
       listen:
         currency: records.currency
+      records.system: Internal
       sorts: [records.sum_amount_gbp desc]
       limit: '500'
       column_limit: '50'
@@ -78,6 +79,7 @@
       measures: [records.sum_amount_gbp]
       listen:
         currency: records.currency
+      records.system: Internal
       sorts: [records.country_name asc]
       limit: '500'
       column_limit: '50'
@@ -121,6 +123,7 @@
       pivots: [records.country_name]
       measures: [records.sum_amount_gbp]
       sorts: [records.country_name]
+      records.system: Internal
       limit: '500'
       column_limit: '50'
       query_timezone: America/Los_Angeles
@@ -174,6 +177,7 @@
       listen:
         currency: records.currency
       sorts: [records.country_name asc]
+      records.system: Internal
       limit: '500'
       column_limit: '50'
       total: true
