@@ -3,7 +3,7 @@ view: records {
 
   dimension: account_no {
     type: string
-    sql: ${TABLE}.AccountNo ;;
+    sql: ${TABLE}.ReconciliationID ;;
     drill_fields: [cash_record*]
   }
 
@@ -90,7 +90,7 @@ view: records {
 
   dimension: currency {
     type: string
-    sql: ${TABLE}.Currency ;;
+    sql: ${TABLE}.Ccy ;;
   }
 
   dimension: date_time_created {
