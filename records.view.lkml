@@ -224,7 +224,7 @@ view: records {
 
   dimension: sign {
     type: string
-    sql: ${TABLE}.Sign ;;
+    sql: ${TABLE}.DrCr ;;
   }
 
   dimension: statement_id {
