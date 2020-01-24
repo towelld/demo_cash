@@ -165,19 +165,14 @@ view: records {
     sql: ${TABLE}.StatementDate ;;
   }
 
-  dimension: open_type {
-    type: string
-    sql: ${TABLE}.OpenType ;;
-  }
-
   dimension: original_amount {
     type: number
-    sql: ${TABLE}.Original_Amount ;;
+    sql: ${TABLE}.AmountSignedOriginal ;;
   }
 
   dimension: original_amount_currency {
     type: string
-    sql: ${TABLE}.Original_AmountCurrency ;;
+    sql: ${TABLE}.Ccy ;;
   }
 
   dimension: our_reference {
