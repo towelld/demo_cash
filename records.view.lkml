@@ -266,7 +266,7 @@ view: records {
                                when 'FDIV' then 'CHF'
                                when 'FINAL' then 'FRA'
                                when 'NPCH' then 'ITL'
-                               when 'NSAL' then 'USD'
+                               when 'NSAL' then 'USA'
                                when 'PCH' then 'CHN'
                                when 'SAL' then 'GBR'
                                else 'ESP'
