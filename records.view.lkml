@@ -162,7 +162,7 @@ view: records {
     type: time
     timeframes: [date, week, month]
     convert_tz: no
-    sql: ${TABLE}.OpenDate ;;
+    sql: ${TABLE}.StatementDate ;;
   }
 
   dimension: open_type {
