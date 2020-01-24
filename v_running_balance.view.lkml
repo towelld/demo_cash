@@ -13,7 +13,7 @@ view: v_running_balance {
 
   dimension: post_date {
     type: string
-    sql: ${TABLE}.PostDate ;;
+    sql: ${TABLE}.EntryDateTime ;;
   }
 
   dimension: received {
