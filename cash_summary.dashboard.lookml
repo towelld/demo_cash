@@ -31,9 +31,10 @@
       fields: [records.currency, records.sum_amount]
       pivots: [records.currency]
       filters:
+      listen:
+        currency: records.currency
       records.open_date: 2019/11/20
       records.system: Internal
-      records.currency: ''
       sorts: [records.currency 0]
       limit: '500'
       column_limit: '50'
