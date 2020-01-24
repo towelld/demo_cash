@@ -261,7 +261,16 @@ view: records {
 
   dimension: country {
     type: string
-    sql: ${TABLE}.reference3 ;;
+    sql: case ${TABLE}.txntype when 'CHRG' then 'AUS'
+                               when 'DIV' then 'CAN'
+                               when 'FDIV' then 'CHF'
+                               when 'FINAL' then 'FRA'
+                               when 'NPCH' then 'ITL'
+                               when 'NSAL' then 'USD'
+                               when 'PCH' then 'CHN'
+                               when 'SAL' then 'GBR'
+                               else 'ESP'
+    end ;;
   }
   dimension: country_name {
     type: string
