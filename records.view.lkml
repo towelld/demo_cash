@@ -50,7 +50,7 @@ view: records {
 
   dimension: amount_gbp {
     type: number
-    sql: ${TABLE}.AmountGBP ;;
+    sql: abs(${TABLE}.AmountGBP) ;;
   }
 
   dimension: amount_gbpcurrency {
