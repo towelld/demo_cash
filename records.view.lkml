@@ -24,7 +24,7 @@ view: records {
 
   dimension: amount_signed {
     type: number
-    sql:   case ${TABLE}.System when 'bank' then case ${TABLE}.Sign when 'C' then ${TABLE}.Amount
+    sql:   case ${TABLE}.System when 'Internal' then case ${TABLE}.Sign when 'C' then ${TABLE}.Amount
             else -${TABLE}.Amount
             end
             when 'our' then case ${TABLE}.Sign when 'C' then ${TABLE}.Amount
