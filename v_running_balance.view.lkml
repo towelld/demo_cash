@@ -3,7 +3,7 @@ view: v_running_balance {
 
   dimension: currency {
     type: string
-    sql: ${TABLE}.Currency ;;
+    sql: ${TABLE}.Ccy ;;
   }
 
   dimension: net {
