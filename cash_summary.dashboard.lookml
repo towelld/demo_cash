@@ -34,6 +34,7 @@
       measures: [records.sum_amount]
       filters:
         records.open_date: 2019/11/20
+        records.system: Internal
       listen:
         currency: records.currency
       sorts: [records.currency, records.post_date_date desc]
