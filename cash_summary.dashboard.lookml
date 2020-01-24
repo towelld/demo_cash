@@ -28,16 +28,13 @@
       width: 6
       model: demo_cash
       explore: records
-      dimensions: [records.currency, records.post_date_date]
+      fields: [records.currency, records.sum_amount]
       pivots: [records.currency]
-      fill_fields: [records.post_date_date]
-      measures: [records.sum_amount]
       filters:
-        records.open_date: 2019/11/20
-        records.system: Internal
-      listen:
-        currency: records.currency
-      sorts: [records.currency, records.post_date_date desc]
+      records.open_date: 2019/11/20
+      records.system: Internal
+      records.currency: ''
+      sorts: [records.currency 0]
       limit: '500'
       column_limit: '50'
       query_timezone: Europe/London
