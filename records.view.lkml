@@ -269,10 +269,10 @@ view: records {
                                when 'DIV' then 'Canada'
                                when 'FDIV' then 'Switzerland'
                                when 'FINAL' then 'France'
-                               when 'NPCH' then 'United Kingdom'
+                               when 'NPCH' then 'Italy'
                                when 'NSAL' then 'United States of America'
                                when 'PCH' then 'China'
-                               when 'SAL' then 'Italy'
+                               when 'SAL' then 'United Kingdom'
                                else 'Spain'
          end ;;
   }
