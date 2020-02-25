@@ -99,13 +99,13 @@
       hidden_fields: [v_cash_proof_ca.sortorder]
       series_labels:
         v_cash_proof_ca.label: " "
-        v_cash_proof_ca.theirs: "Bank"
+        v_cash_proof_ca.theirs: "External"
         v_cash_proof_ca.ours_count: " "
         v_cash_proof_ca.theirs_count: " "
         v_cash_proof_ca.net_check: " "
 
     - name: aged_analysis_our
-      title: Aged Analysis - Ours
+      title: Aged Analysis - Internal
       type: table
       left: 14
       top: 1
@@ -117,7 +117,7 @@
       measures: [v_cash_proof_ageing_ca.sum_count, v_cash_proof_ageing_ca.sum_payment,
         v_cash_proof_ageing_ca.sum_receipt, v_cash_proof_ageing_ca.sum_balance]
       filters:
-        v_cash_proof_ageing_ca.system: our
+        v_cash_proof_ageing_ca.system: Internal
       listen:
         account_no: v_cash_proof_ageing_ca.account_no
       sorts: [v_cash_proof_ageing_ca.the_sort]
@@ -166,7 +166,7 @@
         v_cash_proof_ageing_ca.sum_balance: Net
 
     - name: aged_analysis_bank
-      title: Aged Analysis - Bank
+      title: Aged Analysis - External
       type: table
       left: 14
       top: 4
@@ -178,7 +178,7 @@
       measures: [v_cash_proof_ageing_ca.sum_count, v_cash_proof_ageing_ca.sum_payment,
         v_cash_proof_ageing_ca.sum_receipt, v_cash_proof_ageing_ca.sum_balance]
       filters:
-        v_cash_proof_ageing_ca.system: bank
+        v_cash_proof_ageing_ca.system: External
       listen:
         account_no: v_cash_proof_ageing_ca.account_no
       sorts: [v_cash_proof_ageing_ca.the_sort]
