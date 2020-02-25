@@ -99,6 +99,7 @@
       hidden_fields: [v_cash_proof_ca.sortorder]
       series_labels:
         v_cash_proof_ca.label: " "
+        v_cash_proof_ca.ours: "Internal"
         v_cash_proof_ca.theirs: "External"
         v_cash_proof_ca.ours_count: " "
         v_cash_proof_ca.theirs_count: " "
