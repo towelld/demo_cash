@@ -124,7 +124,7 @@
       measures: [records.sum_amount_gbp]
       listen:
         currency: records.currency
-      sorts: [records.country_name]
+      sorts: [records.sum_amount_gbp]
       records.system: Internal
       limit: '500'
       column_limit: '50'
