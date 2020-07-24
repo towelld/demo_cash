@@ -122,6 +122,8 @@
       dimensions: [records.country_name]
       pivots: [records.country_name]
       measures: [records.sum_amount_gbp]
+      listen:
+        currency: records.currency
       sorts: [records.country_name]
       records.system: Internal
       limit: '500'
