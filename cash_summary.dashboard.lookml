@@ -33,7 +33,7 @@
       filters:
       listen:
         currency: records.currency
-      records.open_date: 2019/11/20
+      records.open_date: 2020/06/01
       records.system: Internal
       sorts: [records.currency 0]
       limit: '500'
