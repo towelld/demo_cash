@@ -187,11 +187,6 @@ view: records {
     sql: ${TABLE}.EntryDate ;;
   }
 
-  dimension: reason {
-    type: string
-    sql: ${TABLE}.Reason ;;
-  }
-
   dimension: reference1 {
     type: string
     sql: ${TABLE}.Reference1 ;;
