@@ -24,7 +24,7 @@
     model: demo_cash
     explore: v_bcbs248
     field: v_bcbs248.post_date_date
-    default_value: "2019-11-20"
+    default_value: "2020-06-01"
 
   elements:
 
@@ -41,7 +41,7 @@
     measures: [v_bcbs248.sum_net]
     filters:
       v_bcbs248.currency: USD
-      v_bcbs248.post_date_date: 2019/11/20
+      v_bcbs248.post_date_date: 2020/06/01
     sorts: [v_bcbs248.post_date_time]
     limit: '500'
     column_limit: '50'
