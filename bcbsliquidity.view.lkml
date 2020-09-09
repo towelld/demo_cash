@@ -1,5 +1,5 @@
 view: bcbsliquidity {
-  sql_table_name: DemoCash.BCBSLiquidity ;;
+  sql_table_name: cshstkCash.BCBSLiquidity ;;
 
   dimension: currency {
     type: string

@@ -1,5 +1,5 @@
 view: group_record_link {
-  sql_table_name: DemoCash.GroupRecordLink ;;
+  sql_table_name: cshstkCash.GroupRecordLink ;;
 
   dimension: group_pk {
     type: string

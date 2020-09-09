@@ -1,5 +1,5 @@
 view: v_running_balance {
-  sql_table_name: DemoCash.vRunningBalance ;;
+  sql_table_name: cshstkCash.vRunningBalance ;;
 
   dimension: currency {
     type: string

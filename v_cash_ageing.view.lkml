@@ -1,5 +1,5 @@
 view: v_cash_ageing {
-  sql_table_name: demoCash.v_cash_ageing ;;
+  sql_table_name: cshstkCash.v_cash_ageing ;;
 
   dimension: age {
     type: string

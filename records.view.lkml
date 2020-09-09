@@ -1,5 +1,5 @@
 view: records {
-  sql_table_name: DemoCash.Records ;;
+  sql_table_name: cshstkCash.Records ;;
 
   dimension: account_no {
     type: string
