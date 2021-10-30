@@ -68,7 +68,7 @@
 
 
     - name: cash_proof
-      title: Position
+      title: Proof
       type: table
       left: 0
       top: 1
