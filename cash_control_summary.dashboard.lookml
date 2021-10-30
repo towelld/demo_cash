@@ -433,8 +433,8 @@
       series_types: {}
       hide_legend: false
       series_colors:
-        bank - Records Count: "#fa8d29"
-        our - Records Count: "#646569"
+        Internal - Records Count: "#fa8d29"
+        External - Records Count: "#646569"
 
     - name: records_loaded_detail
       title: Detail
