@@ -17,6 +17,7 @@
     model: demo_cash
     explore: records
     field: records.currency
+    default_value: "EUR,USD"
 
   elements:
     - name: current_balance
