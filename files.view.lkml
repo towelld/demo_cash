@@ -57,7 +57,7 @@ view: files {
     drill_fields: [id, file_name, file_record_link.count, file_row_errors.count, record_history.count]
     link: {
       label: "Job Status"
-      url: "http://localhost:9999/embed/dashboards/demo_cash::cash_job_status"
+      url: "https://localhost:9999/embed/dashboards/demo_cash::cash_job_status"
     }
   }
 }

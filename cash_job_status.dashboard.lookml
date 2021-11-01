@@ -30,10 +30,9 @@
     model: demo_cash
     explore: load_jobs
     dimensions: [load_jobs.file_name]
-    pivots: [load_jobs.file_name]
     measures: [load_jobs.sum_duration]
-    sorts: [load_jobs.sum_duration desc 0, load_jobs.file_name]
-    limit: '500'
+    sorts: [load_jobs.number_of_loaded_records desc, load_jobs.file_name]
+    limit: '5'
     column_limit: '50'
     query_timezone: Europe/London
     stacking: ''

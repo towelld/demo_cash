@@ -21,7 +21,7 @@
 
   elements:
     - name: files_loaded_chart
-      title: Files Loaded
+      title: Files Loaded (top 5)
       left: 0
       top: 0
       height: 4
