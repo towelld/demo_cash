@@ -71,8 +71,8 @@
       model: demo_cash
       explore: load_jobs
       dimensions: [load_jobs.file_name]
-      measures: [load_jobs.number_of_loaded_records desc, load_jobs.sum_duration]
-      sorts: [load_jobs.file_name]
+      measures: [load_jobs.sum_number_of_loaded_records desc, load_jobs.sum_duration]
+      sorts: [load_jobs.number_of_loaded_records desc]
       limit: '500'
       column_limit: '50'
       total: true
