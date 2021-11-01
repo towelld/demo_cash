@@ -32,8 +32,8 @@
       dimensions: [files.file_name]
       pivots: [files.file_name]
       measures: [files.sum_records_loaded]
-      sorts: [files.sum_records_loaded desc 0, files.file_name]
-      limit: '500'
+      sorts: [files.sum_records_loaded desc, files.file_name]
+      limit: '5'
       column_limit: '50'
       query_timezone: Europe/London
       stacking: ''
