@@ -30,7 +30,6 @@
       model: demo_cash
       explore: files
       dimensions: [files.file_name]
-      pivots: [files.file_name]
       measures: [files.sum_records_loaded]
       sorts: [files.sum_records_loaded desc, files.file_name]
       limit: '5'
