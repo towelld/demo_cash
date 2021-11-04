@@ -219,5 +219,11 @@
       totals_color: "#808080"
       series_types: {}
       series_cell_visualizations:
-        records.sum_amount_gbp:
-          is_active: false
+        records.sum_amount_usd:
+          is_active: true
+          palette:
+            palette_id: 8951697f-453c-ab72-4810-d508a5c69951
+            collection_id: gresham
+            custom_colors:
+            - "#eaa153"
+            - "#de5454"
