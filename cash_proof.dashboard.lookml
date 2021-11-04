@@ -165,6 +165,9 @@
         v_cash_proof_ageing_ca.sum_payment: Payments
         v_cash_proof_ageing_ca.sum_receipt: Receipts
         v_cash_proof_ageing_ca.sum_balance: Net
+      series_cell_visualizations:
+        v_cash_proof_ageing_ca.the_age:
+          is_active: false
 
     - name: aged_analysis_bank
       title: Aged Analysis - External
@@ -226,6 +229,9 @@
         v_cash_proof_ageing_ca.sum_payment: Payments
         v_cash_proof_ageing_ca.sum_receipt: Receipts
         v_cash_proof_ageing_ca.sum_balance: Net
+      series_cell_visualizations:
+        v_cash_proof_ageing_ca.the_age:
+          is_active: false
 
     - name: aged_analysis
       title: Aged Analysis
@@ -281,6 +287,9 @@
         v_cash_proof_ageing_ca.sum_net_payment: Payments
         v_cash_proof_ageing_ca.sum_net_receipt: Receipts
         v_cash_proof_ageing_ca.sum_net_balance: Net
+      series_cell_visualizations:
+        v_cash_proof_ageing_ca.sum_count:
+          is_active: false
 
 
 
