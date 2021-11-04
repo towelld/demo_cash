@@ -169,16 +169,17 @@
         Matched: "#646569"
         Unmatched: "#fa8d29"
 
+
     - name: outstanding
       title: Outstanding
+      model: demo_cash
+      explore: records
       type: looker_grid
       left: 0
       top: 4
       height: 4
       width: 24
-      model: demo_cash
-      explore: records
-      dimensions: [records.account_no, records.system, records.currency, records.original_amount,
+      fields: [records.account_no, records.system, records.currency, records.original_amount,
         records.sign, records.post_date_time, records.value_date, records.our_reference,
         records.reference1, records.reference2, records.reference3, records.transaction_type]
       filters:
@@ -186,20 +187,34 @@
       listen:
         currency: records.currency
       sorts: [records.post_date_date desc]
-      limit: '500'
-      column_limit: '50'
-      query_timezone: Europe/London
+      limit: 500
+      column_limit: 50
       show_view_names: false
       show_row_numbers: false
-      truncate_column_names: false
+      transpose: false
+      truncate_text: true
       hide_totals: false
       hide_row_totals: false
+      size_to_fit: true
       table_theme: gray
       limit_displayed_rows: false
       enable_conditional_formatting: false
-      conditional_formatting_ignored_fields: []
+      header_text_alignment: left
+      header_font_size: '12'
+      rows_font_size: '12'
       conditional_formatting_include_totals: false
       conditional_formatting_include_nulls: false
+      show_sql_query_menu_options: false
+      show_totals: true
+      show_row_totals: true
+      series_text_format:
+        records.original_amount:
+          align: right
+      conditional_formatting_ignored_fields: []
+      truncate_column_names: false
+      defaults_version: 1
+
+
 
     - name: ageing
       title: Ageing
