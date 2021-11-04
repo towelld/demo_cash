@@ -167,7 +167,7 @@
 
     - name: global_cash_table
       title: Global Cash (GBP)
-      type: table
+      type: looker_grid
       left: 0
       top: 12
       height: 6
@@ -218,5 +218,3 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
-
-

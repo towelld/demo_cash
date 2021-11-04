@@ -89,7 +89,7 @@
     top: 4
     height: 8
     width: 24
-    type: table
+    type: looker_grid
     model: demo_cash
     explore: v_bcbs248
     dimensions: [v_bcbs248.post_date_time, v_bcbs248.sent, v_bcbs248.received, v_bcbs248.net]

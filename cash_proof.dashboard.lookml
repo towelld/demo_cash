@@ -69,7 +69,7 @@
 
     - name: cash_proof
       title: Proof
-      type: table
+      type: looker_grid
       left: 0
       top: 1
       height: 9
@@ -107,7 +107,7 @@
 
     - name: aged_analysis_our
       title: Aged Analysis - Internal
-      type: table
+      type: looker_grid
       left: 14
       top: 1
       height: 3
@@ -168,7 +168,7 @@
 
     - name: aged_analysis_bank
       title: Aged Analysis - External
-      type: table
+      type: looker_grid
       left: 14
       top: 4
       height: 3
@@ -229,7 +229,7 @@
 
     - name: aged_analysis
       title: Aged Analysis
-      type: table
+      type: looker_grid
       left: 14
       top: 7
       height: 3
@@ -286,7 +286,7 @@
 
     - name: unmatched_records
       title: Unmatched Records
-      type: table
+      type: looker_grid
       left: 0
       top: 10
       height: 7

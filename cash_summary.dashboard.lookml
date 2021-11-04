@@ -171,7 +171,7 @@
 
     - name: outstanding
       title: Outstanding
-      type: table
+      type: looker_grid
       left: 0
       top: 4
       height: 4

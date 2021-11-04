@@ -69,7 +69,7 @@
     top: 4
     height: 2
     width: 12
-    type: table
+    type: looker_grid
     model: demo_cash
     explore: load_jobs
     dimensions: [load_jobs.file_name, load_jobs.start_date_time_stamp_time, load_jobs.end_date_time_stamp_time,load_jobs.number_of_loaded_records, load_jobs.number_of_discarded_records]
@@ -141,7 +141,7 @@
     top: 4
     height: 2
     width: 12
-    type: table
+    type: looker_grid
     model: demo_cash
     explore: match_jobs
     dimensions: [match_jobs.start_date_time_stamp_time, match_jobs.end_date_time_stamp_time,
@@ -172,7 +172,7 @@
     top: 6
     height: 2
     width: 18
-    type: table
+    type: looker_grid
     model: demo_cash
     explore: groups
     dimensions: [groups.match_name, groups.confidence]
@@ -202,7 +202,7 @@
     top: 6
     height: 2
     width: 6
-    type: table
+    type: looker_grid
     model: demo_cash
     explore: records
     measures: [records.count]

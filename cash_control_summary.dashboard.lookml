@@ -67,7 +67,7 @@
       top: 4
       height: 4
       width: 6
-      type: table
+      type: looker_grid
       model: demo_cash
       explore: load_jobs
       fields: [load_jobs.file_name, load_jobs.sum_number_of_loaded_records]
@@ -143,7 +143,7 @@
       top: 4
       height: 2
       width: 6
-      type: table
+      type: looker_grid
       model: demo_cash
       explore: match_jobs
       dimensions: [match_jobs.start_date_time_stamp_time, match_jobs.duration_secs, match_jobs.number_of_matched_records,
@@ -229,7 +229,7 @@
       top: 4
       height: 2
       width: 6
-      type: table
+      type: looker_grid
       model: demo_cash
       explore: records
       dimensions: [records.system]
@@ -333,7 +333,7 @@
       top: 4
       height: 2
       width: 6
-      type: table
+      type: looker_grid
       model: demo_cash
       explore: records
       measures: [records.count, records.count_matched]
@@ -440,7 +440,7 @@
       top: 10
       height: 4
       width: 6
-      type: table
+      type: looker_grid
       model: demo_cash
       explore: records
       dimensions: [records.system]
@@ -534,7 +534,7 @@
       left: 7
       top: 10
       width: 4
-      type: table
+      type: looker_grid
       model: demo_cash
       explore: user_audit
       dimensions: [user_audit.action]
@@ -629,7 +629,7 @@
       left: 12
       top: 10
       width: 6
-      type: table
+      type: looker_grid
       model: demo_cash
       explore: records
       dimensions: [records.assigned_to]
@@ -725,7 +725,7 @@
       left: 18
       top: 10
       width: 6
-      type: table
+      type: looker_grid
       model: demo_cash
       explore: exceptions
       dimensions: [exceptions.name]
