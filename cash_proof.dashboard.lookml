@@ -328,3 +328,6 @@
         records.transaction_code: Trans Code
         records.open_date: Statement
         records.sum_amount_signed: Amount
+      series_cell_visualizations:
+        records.sum_amount_signed:
+          is_active: false
