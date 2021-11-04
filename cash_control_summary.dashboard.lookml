@@ -93,8 +93,6 @@
       series_cell_visualizations:
         load_jobs.sum_number_of_loaded_records:
           is_active: false
-        load_jobs.sum_duration:
-          is_active: false
 
     - name: match_rate_chart
       title: Match Rate
@@ -285,6 +283,9 @@
         records.count_matched: Matched
         records.count: Total
         calculation_1: Rate
+      series_cell_visualizations:
+        records.count_matched:
+          is_active: false
 
 
     - name: records_matched_chart
@@ -488,6 +489,9 @@
       series_types: {}
       series_labels:
         records.count: Count
+      series_cell_visualizations:
+        records.count:
+          is_active: false
 
 
 
@@ -773,3 +777,6 @@
       series_types: {}
       series_labels:
         exceptions.count: Count
+      series_cell_visualizations:
+        exceptions.count:
+          is_active: false
