@@ -180,7 +180,7 @@
       height: 4
       width: 24
       fields: [records.account_no, records.system, records.currency, records.original_amount,
-        records.sign, records.post_date_time, records.value_date, records.our_reference,
+        records.sign, records.post_date_date, records.value_date, records.our_reference,
         records.reference1, records.reference2, records.reference3, records.transaction_type]
       filters:
         records.active_status: Unmatched
