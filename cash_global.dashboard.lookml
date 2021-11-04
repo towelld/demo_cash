@@ -218,3 +218,6 @@
       show_silhouette: false
       totals_color: "#808080"
       series_types: {}
+      series_cell_visualizations:
+        records.sum_amount_gbp:
+          is_active: false
