@@ -90,7 +90,11 @@
       series_labels:
         load_jobs.sum_number_of_loaded_records: Loaded
         load_jobs.sum_duration: Seconds
-
+      series_cell_visualizations:
+        load_jobs.sum_number_of_loaded_records:
+          is_active: false
+        load_jobs.sum_duration:
+          is_active: false
 
     - name: match_rate_chart
       title: Match Rate
