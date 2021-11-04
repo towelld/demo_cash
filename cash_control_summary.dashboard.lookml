@@ -683,6 +683,9 @@
       series_types: {}
       series_labels:
         records.assigned_to: User
+      series_cell_visualizations:
+        records.count:
+          is_active: false
 
 
     - name: exceptions_chart
